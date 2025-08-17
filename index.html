@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAN EDGE | Premium Streetwear</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --black: #000000;
+            --dark-gray: #0a0a0a;
+            --medium-gray: #1a1a1a;
+            --light-gray: #2a2a2a;
+            --neon-red: #ff073a;
+            --accent-red: #e10600;
+            --white: #ffffff;
+            --transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--black);
+            color: var(--white);
+            overflow-x: hidden;
+            line-height: 1.6;
+            padding-top: 80px;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-weight: 400;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header Styles */
+        header {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            padding: 18px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(10, 10, 10, 0.98);
+            backdrop-filter: blur(10px);
+            transition: var(--transition);
+            border-bottom: 1px solid rgba(255, 7, 58, 0.2);
+        }
+
+        header.scrolled {
+            padding: 12px 0;
+            box-shadow: 0 5px 20px rgba(255, 0, 0, 0.1);
+        }
+
+        .logo {
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: var(--white);
+            text-decoration: none;
+            position: relative;
+            padding-left: 50px;
+            font-family: 'Bebas Neue', sans-serif;
+            z-index: 1001;
+            letter-spacing: 2px;
+        }
+
+        .logo::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 38px;
+            height: 38px;
+            background: var(--neon-red);
+            border-radius: 50%;
+            box-shadow: 0 0 20px var(--neon-red);
+            transition: var(--transition);
+        }
+
+        .logo:hover::before {
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+
+        nav li {
+            margin: 0 18px;
+            position: relative;
+        }
+
+        nav a {
+            color: var(--white);
+            text-decoration: none;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            font-size: 0.9rem;
+            position: relative;
+            padding: 8px 0;
+            transition: var(--transition);
+        }
+
+        nav a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--neon-red);
+            transition: var(--transition);
+        }
+
+        nav a:hover {
+            color: var(--neon-red);
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 12px;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            background: var(--medium-gray);
+            color: var(--white);
+            font-size: 1rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .social-icons a::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 0;
+            background: var(--neon-red);
+            transition: var(--transition);
+            z-index: -1;
+        }
+
+        .social-icons a:hover::before {
+            height: 100%;
+        }
+
+        .social-icons a:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px var(--neon-red);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.8rem;
+            cursor: pointer;
+            z-index: 1002;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 80px 0;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(255, 7, 58, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+            z-index: -1;
+            animation: pulse 6s ease-in-out infinite;
+        }
+
+        .hero-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 600px;
+            padding-right: 50px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero-text h1 {
+            font-size: 4.8rem;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            position: relative;
+            letter-spacing: 3px;
+        }
+
+        .hero-text h1 span {
+            color: var(--neon-red);
+            display: block;
+            text-shadow: 0 0 10px rgba(255, 7, 58, 0.7);
+        }
+
+        .hero-text p {
+            font-size: 1.15rem;
+            margin-bottom: 40px;
+            opacity: 0.85;
+            max-width: 500px;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 42px;
+            background: var(--neon-red);
+            color: var(--white);
+            border-radius: 0;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 0.9rem;
+            transition: var(--transition);
+            border: 2px solid var(--neon-red);
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 0 0 20px rgba(255, 7, 58, 0.5);
+        }
+
+        .btn i {
+            margin-right: 10px;
+        }
+
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: var(--black);
+            transition: var(--transition);
+            z-index: -1;
+        }
+
+        .btn:hover::before {
+            width: 100%;
+        }
+
+        .btn:hover {
+            color: var(--neon-red);
+            box-shadow: 0 0 30px var(--neon-red);
+        }
+
+        .hero-image {
+            flex: 1;
+            position: relative;
+            height: 80vh;
+            perspective: 1000px;
+            z-index: 1;
+        }
+
+        .model-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            border: 2px solid var(--neon-red);
+            box-shadow: 0 0 50px rgba(255, 7, 58, 0.2);
+            transform-style: preserve-3d;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .model-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .model-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(0, 0, 0, 0.8) 0%, rgba(255, 7, 58, 0.1) 100%);
+        }
+
+        /* Collection Section - FIXED */
+        .collection {
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+            z-index: 5;
+        }
+
+        .collection::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=1920&q=80') no-repeat center/cover;
+            opacity: 0.05;
+            z-index: -1;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .section-title {
+            font-size: 3.3rem;
+            margin-bottom: 20px;
+            position: relative;
+            display: inline-block;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--neon-red);
+            border-radius: 2px;
+            box-shadow: 0 0 10px var(--neon-red);
+        }
+
+        .section-subtitle {
+            font-size: 1.15rem;
+            max-width: 600px;
+            margin: 0 auto;
+            opacity: 0.75;
+            font-family: 'Raleway', sans-serif;
+            font-weight: 300;
+        }
+
+        .collection-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .collection-card {
+            background: var(--dark-gray);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: var(--transition);
+            position: relative;
+            box-shadow: var(--shadow);
+            height: auto;
+            /* Changed from fixed height to auto */
+            min-height: 460px;
+            transform: translateY(50px);
+            opacity: 0;
+            transition: transform 0.8s ease, opacity 0.8s ease;
+            border: 1px solid rgba(255, 7, 58, 0.2);
+        }
+
+        .collection-card.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .collection-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(255, 7, 58, 0.3);
+            border-color: var(--neon-red);
+        }
+
+        .collection-img {
+            height: 300px;
+            /* Fixed height for consistency */
+            overflow: hidden;
+            position: relative;
+        }
+
+        .collection-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .collection-card:hover .collection-img img {
+            transform: scale(1.08);
+        }
+
+        .collection-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--neon-red);
+            color: var(--white);
+            padding: 6px 14px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            box-shadow: 0 0 10px var(--neon-red);
+            z-index: 2;
+        }
+
+        .collection-info {
+            padding: 22px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            /* Changed to auto */
+        }
+
+        .collection-info::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--neon-red), transparent);
+        }
+
+        .collection-info h3 {
+            font-size: 1.35rem;
+            margin-bottom: 8px;
+        }
+
+        .collection-info .price {
+            color: var(--neon-red);
+            font-weight: 700;
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            display: block;
+            text-shadow: 0 0 5px rgba(255, 7, 58, 0.5);
+        }
+
+        .collection-info .description {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
+
+        /* Removed .btn-group and .cart-btn */
+        .whatsapp-btn {
+            display: block;
+            /* Changed to block */
+            width: 100%;
+            /* Full width */
+            align-items: center;
+            justify-content: center;
+            padding: 12px 25px;
+            background: #25D366;
+            color: var(--white);
+            border-radius: 0;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            font-size: 0.8rem;
+            transition: var(--transition);
+            border: 2px solid #25D366;
+            position: relative;
+            overflow: hidden;
+            z-index: 1;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.3);
+            margin-top: 15px;
+            text-align: center;
+        }
+
+        .whatsapp-btn i {
+            margin-right: 8px;
+        }
+
+        .whatsapp-btn::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background: var(--black);
+            transition: var(--transition);
+            z-index: -1;
+        }
+
+        .whatsapp-btn:hover::before {
+            width: 100%;
+        }
+
+        .whatsapp-btn:hover {
+            color: #25D366;
+            box-shadow: 0 0 25px rgba(37, 211, 102, 0.5);
+        }
+
+        /* TikTok Section */
+        .tiktok-section {
+            padding: 100px 0;
+            position: relative;
+            overflow: hidden;
+            background: var(--dark-gray);
+            z-index: 5;
+        }
+
+        .tiktok-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1920&q=80') no-repeat center/cover;
+            opacity: 0.05;
+            z-index: -1;
+        }
+
+        .videos-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .video-card {
+            background: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+            overflow: hidden;
+            transition: var(--transition);
+            position: relative;
+            box-shadow: var(--shadow);
+            transform: translateY(50px);
+            opacity: 0;
+            transition: transform 0.8s ease, opacity 0.8s ease;
+            z-index: 1;
+            border: 1px solid rgba(255, 7, 58, 0.2);
+        }
+
+        .video-card.visible {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .video-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(255, 7, 58, 0.3);
+            border-color: var(--neon-red);
+        }
+
+        .video-header {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.4);
+            position: relative;
+        }
+
+        .video-header::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(to right, transparent, var(--neon-red), transparent);
+        }
+
+        .tiktok-icon {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(45deg, #000000, #ff0050);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            font-size: 1.5rem;
+            box-shadow: 0 0 10px rgba(255, 0, 80, 0.5);
+        }
+
+        .video-info h3 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .video-stats {
+            display: flex;
+            gap: 15px;
+            font-size: 0.8rem;
+            color: #aaa;
+        }
+
+        .video-stats span {
+            display: flex;
+            align-items: center;
+        }
+
+        .video-stats i {
+            color: var(--neon-red);
+            margin-right: 5px;
+        }
+
+        .video-thumbnail {
+            height: 250px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .video-card:hover .video-thumbnail img {
+            transform: scale(1.1);
+        }
+
+        .play-icon {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60px;
+            height: 60px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--neon-red);
+            font-size: 1.5rem;
+            opacity: 0;
+            transition: var(--transition);
+            cursor: pointer;
+            box-shadow: 0 0 15px rgba(255, 7, 58, 0.5);
+        }
+
+        .video-card:hover .play-icon {
+            opacity: 1;
+        }
+
+        .video-footer {
+            padding: 15px;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .hashtag {
+            color: var(--neon-red);
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-shadow: 0 0 5px rgba(255, 7, 58, 0.5);
+        }
+
+        /* Newsletter */
+        .newsletter {
+            padding: 100px 0;
+            background: var(--dark-gray);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+            z-index: 5;
+            border-top: 1px solid rgba(255, 7, 58, 0.2);
+            border-bottom: 1px solid rgba(255, 7, 58, 0.2);
+        }
+
+        .newsletter::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(45deg, rgba(255, 7, 58, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%);
+            z-index: 0;
+        }
+
+        .newsletter-content {
+            max-width: 600px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+            padding: 50px;
+            background: rgba(10, 10, 10, 0.7);
+            border: 1px solid var(--neon-red);
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(255, 7, 58, 0.3);
+        }
+
+        .newsletter h2 {
+            font-size: 2.3rem;
+            margin-bottom: 20px;
+        }
+
+        .newsletter p {
+            margin-bottom: 30px;
+            opacity: 0.8;
+            font-family: 'Raleway', sans-serif;
+        }
+
+        .newsletter-form {
+            display: flex;
+            max-width: 500px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 15px 20px;
+            background: rgba(255, 255, 255, 0.08);
+            border: 1px solid var(--neon-red);
+            color: var(--white);
+            font-size: 1rem;
+            outline: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .newsletter-form input::placeholder {
+            color: #aaa;
+        }
+
+        .newsletter-form button {
+            padding: 15px 30px;
+            background: var(--neon-red);
+            color: var(--white);
+            border: none;
+            cursor: pointer;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: var(--transition);
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .newsletter-form button:hover {
+            background: var(--black);
+            color: var(--neon-red);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--black);
+            padding: 80px 0 40px;
+            position: relative;
+            overflow: hidden;
+            border-top: 1px solid var(--neon-red);
+            z-index: 5;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .footer-column h3 {
+            font-size: 1.4rem;
+            margin-bottom: 25px;
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: var(--neon-red);
+        }
+
+        .footer-links {
+            list-style: none;
+        }
+
+        .footer-links li {
+            margin-bottom: 15px;
+        }
+
+        .footer-links a {
+            color: #aaa;
+            text-decoration: none;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            font-size: 0.95rem;
+        }
+
+        .footer-links a i {
+            margin-right: 10px;
+            color: var(--neon-red);
+            width: 20px;
+            font-size: 0.9rem;
+        }
+
+        .footer-links a:hover {
+            color: var(--neon-red);
+            padding-left: 5px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .footer-social a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05);
+            color: var(--white);
+            font-size: 1.1rem;
+            transition: var(--transition);
+        }
+
+        .footer-social a:hover {
+            background: var(--neon-red);
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px var(--neon-red);
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 40px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        /* Animations */
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-20px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(0.9);
+                opacity: 0.1;
+            }
+
+            50% {
+                transform: scale(1);
+                opacity: 0.2;
+            }
+
+            100% {
+                transform: scale(0.9);
+                opacity: 0.1;
+            }
+        }
+
+        /* Mobile Menu */
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: -100%;
+            width: 80%;
+            max-width: 320px;
+            height: 100%;
+            background: var(--dark-gray);
+            z-index: 1100;
+            transition: var(--transition);
+            padding: 80px 30px 30px;
+            box-shadow: -5px 0 30px rgba(255, 7, 58, 0.2);
+            border-left: 1px solid var(--neon-red);
+        }
+
+        .mobile-menu.active {
+            right: 0;
+        }
+
+        .mobile-menu ul {
+            list-style: none;
+        }
+
+        .mobile-menu li {
+            margin-bottom: 25px;
+        }
+
+        .mobile-menu a {
+            color: var(--white);
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            position: relative;
+            padding: 5px 0;
+            display: block;
+        }
+
+        .mobile-menu a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--neon-red);
+            transition: var(--transition);
+        }
+
+        .mobile-menu a:hover::after {
+            width: 60px;
+        }
+
+        .close-menu {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: none;
+            border: none;
+            color: var(--white);
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            z-index: 1000;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        /* Responsive */
+        @media (max-width: 1200px) {
+            .hero-text h1 {
+                font-size: 4rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .hero-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text {
+                padding-right: 0;
+                margin-bottom: 50px;
+                max-width: 100%;
+            }
+
+            .hero-text h1 {
+                font-size: 3.5rem;
+            }
+
+            .hero-image {
+                width: 100%;
+                height: 60vh;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .collection-img {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .hero-text h1 {
+                font-size: 2.8rem;
+            }
+
+            .section-title {
+                font-size: 2.5rem;
+            }
+
+            .hero {
+                padding-top: 60px;
+            }
+
+            .videos-container {
+                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter-form input,
+            .newsletter-form button {
+                width: 100%;
+            }
+
+            .newsletter-form button {
+                margin-top: 15px;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .logo {
+                font-size: 2rem;
+            }
+
+            .hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .collection-img {
+                height: 200px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .btn {
+                padding: 15px 30px;
+            }
+
+            .videos-container {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">THE KNOT CO👗</a>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#collection">Collection</a></li>
+                <li><a href="#tiktok">TikTok</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <button class="close-menu">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#collection">Collection</a></li>
+            <li><a href="#tiktok">TikTok</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="social-icons" style="margin-top: 30px; justify-content: center;">
+            <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>REDEFINE YOUR <span>STREET STYLE</span></h1>
+                <p>Discover premium urban fashion that blends contemporary design with uncompromising quality. Stand out
+                    with our exclusive streetwear collection.</p>
+                <a href="#collection" class="btn"><i class="fas fa-arrow-right"></i> Explore Collection</a>
+            </div>
+            <div class="hero-image">
+                <div class="model-container">
+                    <img src="https://images.unsplash.com/photo-1617137968427-85924c800a22?auto=format&fit=crop&w=800&h=1000&q=80"
+                        alt="Fashion Model">
+                    <div class="model-overlay"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Section - FIXED -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Collection</h2>
+                <p class="section-subtitle">Discover our latest designs crafted for the urban explorer</p>
+            </div>
+            <div class="collection-grid">
+                <!-- Product 1 -->
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=500&h=500&q=80"
+                            alt="Urban Jacket">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Rebel Jacket</h3>
+                        <span class="price">$129.99</span>
+                        <p class="description">Water-resistant urban jacket with thermal lining and multiple pockets.
+                        </p>
+                        <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20buying%20Rebel%20Jacket%20($129.99)"
+                            class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&h=500&q=80"
+                            alt="Street Hoodie">
+                        <div class="collection-badge">Bestseller</div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Urban Hoodie</h3>
+                        <span class="price">$89.99</span>
+                        <p class="description">Premium cotton hoodie with embroidered logo and adjustable drawstrings.
+                        </p>
+                        <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20buying%20Urban%20Hoodie%20($89.99)"
+                            class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=500&h=500&q=80"
+                            alt="Denim Jeans">
+                        <div class="collection-badge">Limited</div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Destroyed Jeans</h3>
+                        <span class="price">$99.99</span>
+                        <p class="description">Distressed denim jeans with slim fit and authentic wear patterns.</p>
+                        <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20buying%20Destroyed%20Jeans%20($99.99)"
+                            class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Product 4 -->
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="https://images.unsplash.com/photo-1593030103066-0093718efeb9?auto=format&fit=crop&w=500&h=500&q=80"
+                            alt="Summer Dress">
+                        <div class="collection-badge">Sale</div>
+                    </div>
+                    <div class="collection-info">
+                        <h3>Streetwear Tee</h3>
+                        <span class="price">$49.99</span>
+                        <p class="description">Oversized graphic tee with screen-printed urban artwork.</p>
+                        <a href="https://wa.me/1234567890?text=I'm%20interested%20in%20buying%20Streetwear%20Tee%20($49.99)"
+                            class="whatsapp-btn">
+                            <i class="fab fa-whatsapp"></i> Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TikTok Section -->
+    <section id="tiktok" class="tiktok-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">TIKTOK TRENDING</h2>
+                <p class="section-subtitle">Top viral videos from our community</p>
+            </div>
+            <div class="videos-container">
+                <!-- Video 1 -->
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theknotco1/video/7531994547568545032"
+                    data-video-id="7531994547568545032" style="max-width: 605px;min-width: 325px;">
+                    <section> <a target="_blank" title="@theknotco1"
+                            href="https://www.tiktok.com/@theknotco1?refer=embed">@theknotco1</a> 🥺💕<a title="capcut"
+                            target="_blank" href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a
+                            title="foeyoupage" target="_blank"
+                            href="https://www.tiktok.com/tag/foeyoupage?refer=embed">#foeyoupage</a> <a
+                            title="foeyoupageofficial" target="_blank"
+                            href="https://www.tiktok.com/tag/foeyoupageofficial?refer=embed">#foeyoupageofficial</a> <a
+                            title="viral" target="_blank" href="https://www.tiktok.com/tag/viral?refer=embed">#viral</a>
+                        <a title="trending" target="_blank"
+                            href="https://www.tiktok.com/tag/trending?refer=embed">#trending</a> <a title="capcut"
+                            target="_blank" href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a
+                            target="_blank" title="♬ original sound  - Melodius Official"
+                            href="https://www.tiktok.com/music/original-sound-Melodius-Official-7527019119653325569?refer=embed">♬
+                            original sound - Melodius Official</a>
+                    </section>
+                </blockquote>
+                <script async src="https://www.tiktok.com/embed.js"></script>
+
+                <!-- Video 2 -->
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theknotco1/video/7515047317901282567"
+                    data-video-id="7515047317901282567" style="max-width: 605px;min-width: 325px;">
+                    <section> <a target="_blank" title="@theknotco1"
+                            href="https://www.tiktok.com/@theknotco1?refer=embed">@theknotco1</a> New Fullkit 🖤🥀 <a
+                            title="onemillionaudition" target="_blank"
+                            href="https://www.tiktok.com/tag/onemillionaudition?refer=embed">#onemillionaudition</a> <a
+                            title="newtrend" target="_blank"
+                            href="https://www.tiktok.com/tag/newtrend?refer=embed">#newtrend</a> <a title="foryou"
+                            target="_blank" href="https://www.tiktok.com/tag/foryou?refer=embed">#foryou</a> #<a
+                            title="foryoupage❤️❤️" target="_blank"
+                            href="https://www.tiktok.com/tag/foryoupage%E2%9D%A4%EF%B8%8F%E2%9D%A4%EF%B8%8F?refer=embed">#foryoupage❤️❤️</a>
+                        #<a title="fyppppppppppppppppppppppp" target="_blank"
+                            href="https://www.tiktok.com/tag/fyppppppppppppppppppppppp?refer=embed">#fyppppppppppppppppppppppp</a>
+                        <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a
+                            title="capcut" target="_blank"
+                            href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a target="_blank"
+                            title="♬ original sound - 𝑴𝒐𝒐𝑵𝒍𝒊𝒈𝑯𝒕_𝒎𝒖𝑺𝒊𝒄☾"
+                            href="https://www.tiktok.com/music/original-sound-7499271567294221057?refer=embed">♬
+                            original sound - 𝑴𝒐𝒐𝑵𝒍𝒊𝒈𝑯𝒕_𝒎𝒖𝑺𝒊𝒄☾</a>
+                    </section>
+                </blockquote>
+                <script async src="https://www.tiktok.com/embed.js"></script>
+
+                <!-- Video 3 -->
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theknotco1/video/7515784098485390610"
+                    data-video-id="7515784098485390610" style="max-width: 605px;min-width: 325px;">
+                    <section> <a target="_blank" title="@theknotco1"
+                            href="https://www.tiktok.com/@theknotco1?refer=embed">@theknotco1</a> මේ Frock එක Pink
+                        Colour එකෙන් ගන්න බැරි වුන අයට මේ colour එකෙන් ගන්න පුළුවන් 🥰🥀❤️ <a title="onemillionaudition"
+                            target="_blank"
+                            href="https://www.tiktok.com/tag/onemillionaudition?refer=embed">#onemillionaudition</a> <a
+                            title="foryou" target="_blank"
+                            href="https://www.tiktok.com/tag/foryou?refer=embed">#foryou</a> <a title="fyp"
+                            target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a
+                            title="foryoupage❤️❤️" target="_blank"
+                            href="https://www.tiktok.com/tag/foryoupage%E2%9D%A4%EF%B8%8F%E2%9D%A4%EF%B8%8F?refer=embed">#foryoupage❤️❤️</a>
+                        <a title="creatorsearchinsights" target="_blank"
+                            href="https://www.tiktok.com/tag/creatorsearchinsights?refer=embed">#creatorsearchinsights</a>
+                        <a title="viral" target="_blank" href="https://www.tiktok.com/tag/viral?refer=embed">#viral</a>
+                        <a title="capcut" target="_blank"
+                            href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a target="_blank"
+                            title="♬ original sound - Teev Dance School"
+                            href="https://www.tiktok.com/music/original-sound-7514324006351244033?refer=embed">♬
+                            original sound - Teev Dance School</a>
+                    </section>
+                </blockquote>
+                <script async src="https://www.tiktok.com/embed.js"></script>
+
+                <!-- Video 4 -->
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theknotco1/video/7535084905424784658"
+                    data-video-id="7535084905424784658" style="max-width: 605px;min-width: 325px;">
+                    <section> <a target="_blank" title="@theknotco1"
+                            href="https://www.tiktok.com/@theknotco1?refer=embed">@theknotco1</a> White 🤍# ඕනි අයට
+                        Order කරන්න පුළුවන් <a title="💕" target="_blank"
+                            href="https://www.tiktok.com/tag/%F0%9F%92%95?refer=embed">#💕</a><a title="trending"
+                            target="_blank" href="https://www.tiktok.com/tag/trending?refer=embed">#trending</a> <a
+                            title="viraltiktok" target="_blank"
+                            href="https://www.tiktok.com/tag/viraltiktok?refer=embed">#viraltiktok</a> <a
+                            title="creatorsearchinsights" target="_blank"
+                            href="https://www.tiktok.com/tag/creatorsearchinsights?refer=embed">#creatorsearchinsights</a>
+                        <a title="followers" target="_blank"
+                            href="https://www.tiktok.com/tag/followers?refer=embed">#followers</a> <a title="theknotco"
+                            target="_blank" href="https://www.tiktok.com/tag/theknotco?refer=embed">#TheKnotCo</a> <a
+                            title="capcut" target="_blank"
+                            href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a target="_blank"
+                            title="♬ original sound - 🍒Hashie⛓"
+                            href="https://www.tiktok.com/music/original-sound-7532164715209755408?refer=embed">♬
+                            original sound - 🍒Hashie⛓</a> </section>
+                </blockquote>
+                <script async src="https://www.tiktok.com/embed.js"></script>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Join Our Community</h2>
+                <p>Subscribe to get exclusive updates, early access to new collections, and special offers.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>THE KNOT CO👗</h3>
+                    <p>Redefining urban fashion with sustainable, stylish clothing for the modern individual.</p>
+                    <div class="footer-social">
+                        <a href="https://wa.me/1234567890" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Shop</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-tshirt"></i> New Arrivals</a></li>
+                        <li><a href="#"><i class="fas fa-fire"></i> Bestsellers</a></li>
+                        <li><a href="#"><i class="fas fa-percent"></i> Sale</a></li>
+                        <li><a href="#"><i class="fas fa-box"></i> Collections</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Help</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-shipping-fast"></i> Shipping</a></li>
+                        <li><a href="#"><i class="fas fa-exchange-alt"></i> Returns</a></li>
+                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-ruler"></i> Size Guide</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> Pannala</a></li>
+                        <li><a href="tel:+11234567890"><i class="fas fa-phone"></i> +1 (123) 456-7890</a></li>
+                        <li><a href="mailto:info@urbanedge.com"><i class="fas fa-envelope"></i> info@urbanedge.com</a>
+                        </li>
+                        <li><a href="#"><i class="fas fa-clock"></i> Mon-Fri: 9AM-8PM</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                &copy; 2023 THE KNOT CO👗. All rights reserved. Designed with passion for fashion.
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Header scroll effect
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+        const closeMenuBtn = document.querySelector('.close-menu');
+        const mobileMenu = document.querySelector('.mobile-menu');
+        const overlay = document.querySelector('.overlay');
+
+        mobileMenuBtn.addEventListener('click', function () {
+            mobileMenu.classList.add('active');
+            overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeMenuBtn.addEventListener('click', function () {
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        overlay.addEventListener('click', function () {
+            mobileMenu.classList.remove('active');
+            overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                if (this.getAttribute('href') === '#') return;
+
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop - 80,
+                    behavior: 'smooth'
+                });
+
+                // Close mobile menu if open
+                mobileMenu.classList.remove('active');
+                overlay.classList.remove('active');
+                document.body.style.overflow = '';
+            });
+        });
+
+        // Scroll animations
+        function animateOnScroll() {
+            const videoCards = document.querySelectorAll('.video-card');
+            const collectionCards = document.querySelectorAll('.collection-card');
+            const triggerBottom = window.innerHeight * 0.8;
+
+            videoCards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                if (cardTop < triggerBottom) {
+                    card.classList.add('visible');
+                }
+            });
+
+            collectionCards.forEach(card => {
+                const cardTop = card.getBoundingClientRect().top;
+                if (cardTop < triggerBottom) {
+                    card.classList.add('visible');
+                }
+            });
+        }
+
+        // Initialize animations
+        window.addEventListener('scroll', animateOnScroll);
+        window.addEventListener('load', animateOnScroll);
+
+        // Video play simulation
+        document.querySelectorAll('.play-icon').forEach(icon => {
+            icon.addEventListener('click', function (e) {
+                e.preventDefault();
+                const videoCard = this.closest('.video-card');
+
+                // Create lightbox effect
+                const lightbox = document.createElement('div');
+                lightbox.style.position = 'fixed';
+                lightbox.style.top = '0';
+                lightbox.style.left = '0';
+                lightbox.style.width = '100%';
+                lightbox.style.height = '100%';
+                lightbox.style.backgroundColor = 'rgba(0,0,0,0.9)';
+                lightbox.style.zIndex = '2000';
+                lightbox.style.display = 'flex';
+                lightbox.style.justifyContent = 'center';
+                lightbox.style.alignItems = 'center';
+                lightbox.style.cursor = 'pointer';
+
+                // Create video container
+                const videoContainer = document.createElement('div');
+                videoContainer.style.position = 'relative';
+                videoContainer.style.width = '80%';
+                videoContainer.style.maxWidth = '800px';
+                videoContainer.style.height = '80%';
+                videoContainer.style.backgroundColor = '#000';
+                videoContainer.style.border = '2px solid var(--neon-red)';
+                videoContainer.style.boxShadow = '0 0 30px var(--neon-red)';
+
+                // Add close button
+                const closeBtn = document.createElement('button');
+                closeBtn.innerHTML = '&times;';
+                closeBtn.style.position = 'absolute';
+                closeBtn.style.top = '15px';
+                closeBtn.style.right = '15px';
+                closeBtn.style.background = 'transparent';
+                closeBtn.style.border = 'none';
+                closeBtn.style.color = '#fff';
+                closeBtn.style.fontSize = '2rem';
+                closeBtn.style.cursor = 'pointer';
+                closeBtn.style.zIndex = '10';
+
+                // Add video
+                const video = document.createElement('video');
+                video.src = 'https://assets.mixkit.co/videos/preview/mixkit-winter-fashion-cold-looking-woman-concept-video-39874-large.mp4';
+                video.style.width = '100%';
+                video.style.height = '100%';
+                video.controls = true;
+                video.autoplay = true;
+
+                // Build structure
+                videoContainer.appendChild(closeBtn);
+                videoContainer.appendChild(video);
+                lightbox.appendChild(videoContainer);
+                document.body.appendChild(lightbox);
+
+                // Close functionality
+                closeBtn.addEventListener('click', function () {
+                    document.body.removeChild(lightbox);
+                });
+
+                lightbox.addEventListener('click', function (e) {
+                    if (e.target === lightbox) {
+                        document.body.removeChild(lightbox);
+                    }
+                });
+            });
+        });
+
+        // Newsletter form submission
+        const newsletterForm = document.querySelector('.newsletter-form');
+        newsletterForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const emailInput = this.querySelector('input[type="email"]');
+
+            if (emailInput.value) {
+                alert('Thank you for subscribing to our newsletter!');
+                emailInput.value = '';
+            }
+        });
+    </script>
+</body>
+
+</html>
