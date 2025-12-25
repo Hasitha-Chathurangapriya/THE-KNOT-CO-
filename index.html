@@ -759,45 +759,34 @@
             z-index: 2;
         }
 
-        .collection-info {
-            padding: 22px;
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            height: auto;
-        }
+/* Adjust collection-info for buttons only */
+.collection-info {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100px;
+}
 
-        .collection-info::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80%;
-            height: 1px;
-            background: linear-gradient(to right, transparent, var(--gold), transparent);
-        }
+/* Adjust collection-img to take more space */
+.collection-img {
+    height: 350px;
+}
 
-        .collection-info h3 {
-            font-size: 1.35rem;
-            margin-bottom: 8px;
-        }
+/* Adjust card height for new layout */
+.collection-card {
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
 
-        .collection-info .price {
-            color: var(--gold);
-            font-weight: 700;
-            font-size: 1.25rem;
-            margin-bottom: 12px;
-            display: block;
-            text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
-        }
+.collection-card .collection-img {
+    flex: 1;
+}
 
-        .collection-info .description {
-            font-size: 0.9rem;
-            opacity: 0.8;
-            margin-bottom: 15px;
-            flex-grow: 1;
-        }
+.collection-card .collection-info {
+    flex-shrink: 0;
+}
 
         .whatsapp-btn {
             display: block;
@@ -1767,90 +1756,226 @@
     </section>
 
 
-    <!-- Collection Section -->
-    <section id="collection" class="collection">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Featured Collection</h2>
-                <p class="section-subtitle">Discover our latest designs crafted for the urban explorer</p>
+<!-- Collection Section -->
+<section id="collection" class="collection">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Featured Collection</h2>
+            <p class="section-subtitle">Click any product to order via WhatsApp instantly</p>
+        </div>
+        <div class="collection-grid">
+            <!-- Product 1 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Urban Jacket">
+                    <div class="collection-badge">New</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
             </div>
-            <div class="collection-grid">
-                <!-- Product 1 -->
-                <div class="collection-card">
-                    <div class="collection-img">
-                        <img src="https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?auto=format&fit=crop&w=500&h=500&q=80"
-                            alt="Urban Jacket">
-                        <div class="collection-badge">New</div>
-                    </div>
-                    <div class="collection-info">
-                        <!-- <h3>Rebel Jacket</h3>
-                        <span class="price">$129.99</span>
-                        <p class="description">Water-resistant urban jacket with thermal lining and multiple pockets.
-                        </p> -->
-                        <a href="https://wa.me/+94776280714?text=i want to buy this"
-                            class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> Buy Now
-                        </a>
-                    </div>
-                </div>
 
-                <!-- Product 2 -->
-                <div class="collection-card">
-                    <div class="collection-img">
-                        <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&h=500&q=80"
-                            alt="Street Hoodie">
-                        <div class="collection-badge">Bestseller</div>
-                    </div>
-                    <div class="collection-info">
-                        <!-- <h3>Urban Hoodie</h3>
-                        <span class="price">$89.99</span>
-                        <p class="description">Premium cotton hoodie with embroidered logo and adjustable drawstrings.
-                        </p> -->
-                        <a href="https://wa.me/+94776280714?text=i want to buy this"
-                            class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> Buy Now
-                        </a>
-                    </div>
+            <!-- Product 2 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Street Hoodie">
+                    <div class="collection-badge">Bestseller</div>
                 </div>
-
-                <!-- Product 3 -->
-                <div class="collection-card">
-                    <div class="collection-img">
-                        <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=500&h=500&q=80"
-                            alt="Denim Jeans">
-                        <div class="collection-badge">Limited</div>
-                    </div>
-                    <div class="collection-info">
-                        <!-- <h3>Destroyed Jeans</h3>
-                        <span class="price">$99.99</span>
-                        <p class="description">Distressed denim jeans with slim fit and authentic wear patterns.</p> -->
-                        <a href="https://wa.me/+94776280714?text=i want to buy this"
-                            class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> Buy Now
-                        </a>
-                    </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
                 </div>
+            </div>
 
-                <!-- Product 4 -->
-                <div class="collection-card">
-                    <div class="collection-img">
-                        <img src="https://images.unsplash.com/photo-1593030103066-0093718efeb9?auto=format&fit=crop&w=500&h=500&q=80"
-                            alt="Summer Dress">
-                        <div class="collection-badge">Sale</div>
-                    </div>
-                    <div class="collection-info">
-                        <h3>Streetwear Tee</h3>
-                        <span class="price">$49.99</span>
-                        <p class="description">Oversized graphic tee with screen-printed urban artwork.</p>
-                        <a href="https://wa.me/+94776280714?text=i want to buy this"
-                            class="whatsapp-btn">
-                            <i class="fab fa-whatsapp"></i> Buy Now
-                        </a>
-                    </div>
+            <!-- Product 3 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1576566588028-4147f3842f27?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Denim Jeans">
+                    <div class="collection-badge">Limited</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 4 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1593030103066-0093718efeb9?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Streetwear Tee">
+                    <div class="collection-badge">Sale</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 5 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Classic Blazer">
+                    <div class="collection-badge">Premium</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 6 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1543076447-215ad9ba6923?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Cargo Pants">
+                    <div class="collection-badge">Trending</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 7 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1552902865-b72c031ac5ea?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Leather Jacket">
+                    <div class="collection-badge">Premium</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 8 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1505022610485-0249ba5b3675?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Knit Sweater">
+                    <div class="collection-badge">Winter</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 9 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1586790170083-2f9ceadc732d?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Track Suit">
+                    <div class="collection-badge">Sport</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 10 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1574180045827-681f8a1a9622?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Shirt">
+                    <div class="collection-badge">Casual</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 11 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1582418702059-97ebafb35d09?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Shorts">
+                    <div class="collection-badge">Summer</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 12 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Vest">
+                    <div class="collection-badge">Layered</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 13 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Polo Shirt">
+                    <div class="collection-badge">Classic</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
+                </div>
+            </div>
+
+            <!-- Product 14 -->
+            <div class="collection-card">
+                <div class="collection-img">
+                    <img src="https://images.unsplash.com/photo-1582552938357-32b906df40cb?auto=format&fit=crop&w=500&h=500&q=80"
+                        alt="Coat">
+                    <div class="collection-badge">Winter</div>
+                </div>
+                <div class="collection-info">
+                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
+                        class="whatsapp-btn">
+                        <i class="fab fa-whatsapp"></i> Buy Now
+                    </a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- TikTok Section -->
     <section id="tiktok" class="tiktok-section">
@@ -2293,6 +2418,7 @@
 </body>
 
 </html>
+
 
 
 
