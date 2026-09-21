@@ -2,13 +2,8 @@
 <html lang="en">
 
 <head>
+    <!-- CHARACTER SET & VIEWPORT -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-     <!-- CHARACTER SET -->
-    <meta charset="UTF-8">
-    
-    <!-- VIEWPORT FOR RESPONSIVE DESIGN -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
     
     <!-- PRIMARY SEO META TAGS -->
@@ -25,7 +20,6 @@
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
     <meta name="googlebot" content="index, follow">
     <meta name="bingbot" content="index, follow">
-    <meta name="slurp" content="index, follow">
     
     <!-- GEO LOCATION & LOCAL SEO -->
     <meta name="geo.region" content="LK-WP">
@@ -60,22 +54,8 @@
     <meta name="twitter:image" content="https://the-knotco.com/images/twitter-share.jpg">
     <meta name="twitter:image:alt" content="THE KNOT CO Fashion Collection">
     
-    <!-- WHATSAPP SHARE -->
-    <meta property="og:image:type" content="image/jpeg">
-    <meta property="og:image:width" content="300">
-    <meta property="og:image:height" content="300">
-    
-    <!-- PINTEREST -->
-    <meta name="pinterest:description" content="Discover premium streetwear at THE KNOT CO - Sri Lanka's urban fashion destination">
-    <meta name="pinterest:image" content="https://the-knotco.com/images/pinterest-share.jpg">
-    
     <!-- CANONICAL URL -->
     <link rel="canonical" href="https://the-knotco.com/">
-    
-    <!-- ALTERNATE LANGUAGES (if available) -->
-    <link rel="alternate" hreflang="en" href="https://the-knotco.com/">
-    <link rel="alternate" hreflang="si" href="https://the-knotco.com/si/">
-    <link rel="alternate" hreflang="x-default" href="https://the-knotco.com/">
     
     <!-- MOBILE & APP SPECIFIC -->
     <meta name="format-detection" content="telephone=yes">
@@ -85,7 +65,6 @@
     <meta name="mobile-web-app-capable" content="yes">
     <meta name="theme-color" content="#000000">
     <meta name="msapplication-TileColor" content="#FFD700">
-    <meta name="msapplication-TileImage" content="/mstile-144x144.png">
     <meta name="application-name" content="THE KNOT CO">
     
     <!-- STRUCTURED DATA / SCHEMA.ORG -->
@@ -97,33 +76,26 @@
                 "@type": "ClothingStore",
                 "@id": "https://the-knotco.com/#store",
                 "name": "THE KNOT CO",
-                "image": [
-                    "https://the-knotco.com/logo.jpeg",
-                    "https://the-knotco.com/images/store.jpg"
-                ],
+                "image": ["https://the-knotco.com/logo.jpeg", "https://the-knotco.com/images/store.jpg"],
                 "description": "Premium urban fashion and streetwear brand in Sri Lanka offering exclusive clothing collections",
                 "url": "https://the-knotco.com/",
-                "telephone": "+94771234567",
+                "telephone": "+94776280714",
                 "address": {
                     "@type": "PostalAddress",
-                    "streetAddress": "123 Fashion Street",
+                    "streetAddress": "Mellawagedara Road",
                     "addressLocality": "Pannala",
                     "postalCode": "60160",
                     "addressCountry": "LK"
                 },
                 "openingHours": "Mo-Sa 09:00-20:00",
                 "priceRange": "$$",
-                "currenciesAccepted": "LKR, USD",
-                "paymentAccepted": "Cash, Credit Card, Debit Card, Mobile Payments",
-                "areaServed": {
-                    "@type": "Country",
-                    "name": "Sri Lanka"
-                },
+                "currenciesAccepted": "LKR",
+                "areaServed": {"@type": "Country", "name": "Sri Lanka"},
                 "sameAs": [
-                    "https://www.tiktok.com/@theknotco1",
-                    "https://www.instagram.com/theknotco",
-                    "https://www.facebook.com/theknotco",
-                    "https://wa.me/94771234567"
+                    "https://www.tiktok.com/@theknotcoclothing",
+                    "https://www.instagram.com/the_knotco__/",
+                    "https://web.facebook.com/clothcreationSl/",
+                    "https://wa.me/94776280714"
                 ]
             },
             {
@@ -131,120 +103,31 @@
                 "@id": "https://the-knotco.com/#website",
                 "url": "https://the-knotco.com/",
                 "name": "THE KNOT CO",
-                "description": "Premium streetwear and urban fashion online store",
-                "publisher": {
-                    "@id": "https://the-knotco.com/#store"
-                },
+                "publisher": {"@id": "https://the-knotco.com/#store"},
                 "potentialAction": [{
                     "@type": "SearchAction",
                     "target": "https://the-knotco.com/search?q={search_term_string}",
                     "query-input": "required name=search_term_string"
                 }]
-            },
-            {
-                "@type": "Organization",
-                "@id": "https://the-knotco.com/#organization",
-                "name": "THE KNOT CO",
-                "url": "https://the-knotco.com/",
-                "logo": {
-                    "@type": "ImageObject",
-                    "url": "https://the-knotco.com/logo.jpeg",
-                    "width": "512",
-                    "height": "512"
-                },
-                "contactPoint": {
-                    "@type": "ContactPoint",
-                    "telephone": "+94771234567",
-                    "contactType": "Customer Service",
-                    "areaServed": "LK",
-                    "availableLanguage": ["en", "si"]
-                }
             }
         ]
     }
     </script>
     
-    <!-- PRODUCT SCHEMA (example for featured product) -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org/",
-        "@type": "Product",
-        "name": "Rebel Jacket",
-        "image": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8",
-        "description": "Water-resistant urban jacket with thermal lining and multiple pockets",
-        "brand": {
-            "@type": "Brand",
-            "name": "THE KNOT CO"
-        },
-        "offers": {
-            "@type": "Offer",
-            "url": "https://the-knotco.com/#collection",
-            "priceCurrency": "USD",
-            "price": "129.99",
-            "availability": "https://schema.org/InStock",
-            "seller": {
-                "@type": "Organization",
-                "name": "THE KNOT CO"
-            }
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "reviewCount": "42"
-        }
-    }
-    </script>
-    
-    <!-- BREADCRUMB SCHEMA -->
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "BreadcrumbList",
-        "itemListElement": [{
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Home",
-            "item": "https://the-knotco.com/"
-        },{
-            "@type": "ListItem",
-            "position": 2,
-            "name": "Collections",
-            "item": "https://the-knotco.com/#collection"
-        },{
-            "@type": "ListItem",
-            "position": 3,
-            "name": "Urban Fashion",
-            "item": "https://the-knotco.com/#collection"
-        }]
-    }
-    </script>
-    
     <!-- FAVICONS -->
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="manifest" href="/site.webmanifest">
     
     <!-- PRELOAD CRITICAL RESOURCES -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style">
     <link rel="preload" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" as="style">
-    <link rel="preload" href="main.jpg" as="image" type="image/jpeg">
-    
-    <!-- DNS PREFETCH -->
-    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
-    <link rel="dns-prefetch" href="//fonts.googleapis.com">
-    <link rel="dns-prefetch" href="//fonts.gstatic.com">
-    <link rel="dns-prefetch" href="//images.unsplash.com">
+    <link rel="preload" href="main.jpg" as="image" type="image/jpeg" fetchpriority="high">
     
     <!-- STYLESHEETS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <title>THE KNOT CO👗</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    
     <style>
         :root {
             --black: #000000;
@@ -261,16 +144,8 @@
             --shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        html {
-            scroll-behavior: smooth;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
         body {
             font-family: 'Montserrat', sans-serif;
             background-color: var(--black);
@@ -280,1412 +155,319 @@
             padding-top: 80px;
         }
 
-        h1,
-        h2,
-        h3,
-        h4 {
+        h1, h2, h3, h4 {
             font-family: 'Bebas Neue', sans-serif;
             font-weight: 400;
             letter-spacing: 1.5px;
             text-transform: uppercase;
         }
 
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
 
         /* Header Styles */
         header {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 1000;
-            padding: 18px 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background: rgba(10, 10, 10, 0.98);
-            backdrop-filter: blur(10px);
-            transition: var(--transition);
-            border-bottom: 1px solid rgba(255, 215, 0, 0.3);
+            position: fixed; top: 0; width: 100%; z-index: 1000; padding: 18px 0;
+            display: flex; justify-content: space-between; align-items: center;
+            background: rgba(10, 10, 10, 0.98); backdrop-filter: blur(10px);
+            transition: var(--transition); border-bottom: 1px solid rgba(255, 215, 0, 0.3);
         }
-
-        header.scrolled {
-            padding: 12px 0;
-            box-shadow: 0 5px 20px rgba(255, 215, 0, 0.1);
-        }
-
+        header.scrolled { padding: 12px 0; box-shadow: 0 5px 20px rgba(255, 215, 0, 0.1); }
         .logo {
-            font-size: 2.3rem;
-            font-weight: 700;
-            color: var(--white);
-            text-decoration: none;
-            position: relative;
-            padding-left: 50px;
-            font-family: 'Bebas Neue', sans-serif;
-            z-index: 1001;
-            letter-spacing: 2px;
+            font-size: 2.3rem; font-weight: 700; color: var(--white); text-decoration: none;
+            position: relative; padding-left: 50px; font-family: 'Bebas Neue', sans-serif;
+            z-index: 1001; letter-spacing: 2px;
         }
-
         .logo::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            top: 50%;
-            transform: translateY(-50%);
-            width: 38px;
-            height: 38px;
-            background: var(--gold);
-            border-radius: 50%;
-            box-shadow: 0 0 20px var(--gold);
-            transition: var(--transition);
+            content: ''; position: absolute; left: 0; top: 50%; transform: translateY(-50%);
+            width: 38px; height: 38px; background: var(--gold); border-radius: 50%;
+            box-shadow: 0 0 20px var(--gold); transition: var(--transition);
         }
-
-        .logo:hover::before {
-            transform: translateY(-50%) scale(1.1);
-        }
-
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-
-        nav li {
-            margin: 0 18px;
-            position: relative;
-        }
-
+        .logo:hover::before { transform: translateY(-50%) scale(1.1); }
+        nav ul { display: flex; list-style: none; }
+        nav li { margin: 0 18px; position: relative; }
         nav a {
-            color: var(--white);
-            text-decoration: none;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1.2px;
-            font-size: 0.9rem;
-            position: relative;
-            padding: 8px 0;
-            transition: var(--transition);
+            color: var(--white); text-decoration: none; font-weight: 500; text-transform: uppercase;
+            letter-spacing: 1.2px; font-size: 0.9rem; position: relative; padding: 8px 0; transition: var(--transition);
         }
-
         nav a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--gold);
-            transition: var(--transition);
+            content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px;
+            background: var(--gold); transition: var(--transition);
         }
-
-        nav a:hover {
-            color: var(--gold);
-        }
-
-        nav a:hover::after {
-            width: 100%;
-        }
-
-        .social-icons {
-            display: flex;
-            gap: 12px;
-        }
-
+        nav a:hover { color: var(--gold); }
+        nav a:hover::after { width: 100%; }
+        .social-icons { display: flex; gap: 12px; }
         .social-icons a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 38px;
-            height: 38px;
-            border-radius: 50%;
-            background: var(--medium-gray);
-            color: var(--white);
-            font-size: 1rem;
-            transition: var(--transition);
-            position: relative;
-            overflow: hidden;
+            display: flex; align-items: center; justify-content: center; width: 38px; height: 38px;
+            border-radius: 50%; background: var(--medium-gray); color: var(--white); font-size: 1rem;
+            transition: var(--transition); position: relative; overflow: hidden;
         }
-
         .social-icons a::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 0;
-            background: var(--gold);
-            transition: var(--transition);
-            z-index: -1;
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 0;
+            background: var(--gold); transition: var(--transition); z-index: -1;
         }
-
-        .social-icons a:hover::before {
-            height: 100%;
-        }
-
-        .social-icons a:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 15px var(--gold);
-        }
-
+        .social-icons a:hover::before { height: 100%; }
+        .social-icons a:hover { transform: translateY(-5px); box-shadow: 0 0 15px var(--gold); }
         .mobile-menu-btn {
-            display: none;
-            background: none;
-            border: none;
-            color: var(--white);
-            font-size: 1.8rem;
-            cursor: pointer;
-            z-index: 1002;
+            display: none; background: none; border: none; color: var(--white);
+            font-size: 1.8rem; cursor: pointer; z-index: 1002;
         }
 
         /* Hero Section */
         .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            position: relative;
-            overflow: hidden;
-            padding: 80px 0;
+            min-height: 100vh; display: flex; align-items: center; position: relative;
+            overflow: hidden; padding: 80px 0;
         }
-
         .hero::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             background: radial-gradient(circle, rgba(255, 7, 58, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
-            z-index: -1;
-            animation: pulse 6s ease-in-out infinite;
+            z-index: -1; animation: pulse 6s ease-in-out infinite;
         }
-
-        .hero-content {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            width: 100%;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-text {
-            flex: 1;
-            max-width: 600px;
-            padding-right: 50px;
-            position: relative;
-            z-index: 2;
-        }
-
-        .hero-text h1 {
-            font-size: 4.8rem;
-            line-height: 1.1;
-            margin-bottom: 20px;
-            position: relative;
-            letter-spacing: 3px;
-        }
-
-        .hero-text h1 span {
-            color: var(--gold);
-            display: block;
-            text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
-        }
-
-        .hero-text p {
-            font-size: 1.15rem;
-            margin-bottom: 40px;
-            opacity: 0.85;
-            max-width: 500px;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 300;
-        }
-
+        .hero-content { display: flex; align-items: center; justify-content: space-between; width: 100%; position: relative; z-index: 1; }
+        .hero-text { flex: 1; max-width: 600px; padding-right: 50px; position: relative; z-index: 2; }
+        .hero-text h1 { font-size: 4.8rem; line-height: 1.1; margin-bottom: 20px; position: relative; letter-spacing: 3px; }
+        .hero-text h1 span { color: var(--gold); display: block; text-shadow: 0 0 10px rgba(255, 215, 0, 0.7); }
+        .hero-text p { font-size: 1.15rem; margin-bottom: 40px; opacity: 0.85; max-width: 500px; font-family: 'Raleway', sans-serif; font-weight: 300; }
         .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 16px 42px;
-            background: var(--neon-red);
-            color: var(--white);
-            border-radius: 0;
-            text-decoration: none;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            font-size: 0.9rem;
-            transition: var(--transition);
-            border: 2px solid var(--neon-red);
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            box-shadow: 0 0 20px rgba(255, 7, 58, 0.5);
+            display: inline-flex; align-items: center; justify-content: center; padding: 16px 42px;
+            background: var(--neon-red); color: var(--white); border-radius: 0; text-decoration: none;
+            font-weight: 600; text-transform: uppercase; letter-spacing: 2px; font-size: 0.9rem;
+            transition: var(--transition); border: 2px solid var(--neon-red); position: relative;
+            overflow: hidden; z-index: 1; box-shadow: 0 0 20px rgba(255, 7, 58, 0.5);
         }
-
-        .btn i {
-            margin-right: 10px;
-        }
-
+        .btn i { margin-right: 10px; }
         .btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 100%;
-            background: var(--black);
-            transition: var(--transition);
-            z-index: -1;
+            content: ''; position: absolute; top: 0; left: 0; width: 0; height: 100%;
+            background: var(--black); transition: var(--transition); z-index: -1;
         }
-
-        .btn:hover::before {
-            width: 100%;
-        }
-
-        .btn:hover {
-            color: var(--neon-red);
-            box-shadow: 0 0 30px var(--neon-red);
-        }
-
-        .hero-image {
-            flex: 1;
-            position: relative;
-            height: 80vh;
-            perspective: 1000px;
-            z-index: 1;
-        }
-
+        .btn:hover::before { width: 100%; }
+        .btn:hover { color: var(--neon-red); box-shadow: 0 0 30px var(--neon-red); }
+        .hero-image { flex: 1; position: relative; height: 80vh; perspective: 1000px; z-index: 1; }
         .model-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            border: 2px solid var(--gold);
-            box-shadow: 0 0 50px rgba(255, 215, 0, 0.2);
-            transform-style: preserve-3d;
-            animation: float 8s ease-in-out infinite;
+            position: relative; width: 100%; height: 100%; overflow: hidden; border: 2px solid var(--gold);
+            box-shadow: 0 0 50px rgba(255, 215, 0, 0.2); transform-style: preserve-3d; animation: float 8s ease-in-out infinite;
         }
-
-        .model-container img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
+        .model-container img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
         .model-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             background: linear-gradient(45deg, rgba(0, 0, 0, 0.8) 0%, rgba(255, 215, 0, 0.1) 100%);
         }
 
-        /* About Section */
-        .about {
-            padding: 100px 0;
-            position: relative;
-            overflow: hidden;
-            background: var(--dark-gray);
-            z-index: 5;
-        }
-
-        .about-content {
-            display: flex;
-            align-items: center;
-            gap: 50px;
-        }
-
-        .about-text {
-            flex: 1;
-        }
-
-        .about-text h2 {
-            font-size: 3.3rem;
-            margin-bottom: 20px;
-            position: relative;
-            display: inline-block;
-        }
-
-        .about-text h2::after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 0;
-            width: 80px;
-            height: 4px;
-            background: var(--neon-red);
-            border-radius: 2px;
-            box-shadow: 0 0 10px var(--neon-red);
-        }
-
-        .about-text p {
-            margin-bottom: 25px;
-            font-size: 1.1rem;
-            line-height: 1.8;
-        }
-
-        .about-image {
-            flex: 1;
-            position: relative;
-        }
-
-        .about-image img {
-            width: 100%;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            border: 2px solid var(--gold);
-        }
-
         /* Collection Section */
-        .collection {
-            padding: 100px 0;
-            position: relative;
-            overflow: hidden;
-            z-index: 5;
-        }
-
+        .collection { padding: 100px 0; position: relative; overflow: hidden; z-index: 5; }
         .collection::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
             background: url('https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=1920&q=80') no-repeat center/cover;
-            opacity: 0.05;
-            z-index: -1;
+            opacity: 0.05; z-index: -1;
         }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .section-title {
-            font-size: 3.3rem;
-            margin-bottom: 20px;
-            position: relative;
-            display: inline-block;
-        }
-
+        .section-header { text-align: center; margin-bottom: 60px; position: relative; z-index: 1; }
+        .section-title { font-size: 3.3rem; margin-bottom: 20px; position: relative; display: inline-block; }
         .section-title::after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 80px;
-            height: 4px;
-            background: var(--gold);
-            border-radius: 2px;
-            box-shadow: 0 0 10px var(--gold);
+            content: ''; position: absolute; bottom: -15px; left: 50%; transform: translateX(-50%);
+            width: 80px; height: 4px; background: var(--gold); border-radius: 2px; box-shadow: 0 0 10px var(--gold);
         }
-
-        .section-subtitle {
-            font-size: 1.15rem;
-            max-width: 600px;
-            margin: 0 auto;
-            opacity: 0.75;
-            font-family: 'Raleway', sans-serif;
-            font-weight: 300;
-        }
-
-        .collection-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
+        .section-subtitle { font-size: 1.15rem; max-width: 600px; margin: 0 auto; opacity: 0.75; font-family: 'Raleway', sans-serif; font-weight: 300; }
+        .collection-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
         .collection-card {
-            background: var(--dark-gray);
-            border-radius: 8px;
-            overflow: hidden;
-            transition: var(--transition);
-            position: relative;
-            box-shadow: var(--shadow);
-            height: auto;
-            min-height: 460px;
-            transform: translateY(50px);
-            opacity: 0;
-            transition: transform 0.8s ease, opacity 0.8s ease;
+            background: var(--dark-gray); border-radius: 8px; overflow: hidden; transition: var(--transition);
+            position: relative; box-shadow: var(--shadow); min-height: 450px; display: flex; flex-direction: column;
+            transform: translateY(50px); opacity: 0; transition: transform 0.8s ease, opacity 0.8s ease;
             border: 1px solid rgba(255, 215, 0, 0.2);
         }
-
-        .collection-card.visible {
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        .collection-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
-            border-color: var(--gold);
-        }
-
-        .collection-img {
-            height: 300px;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .collection-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .collection-card:hover .collection-img img {
-            transform: scale(1.08);
-        }
-
+        .collection-card.visible { transform: translateY(0); opacity: 1; }
+        .collection-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3); border-color: var(--gold); }
+        .collection-img { height: 350px; overflow: hidden; position: relative; flex: 1; }
+        .collection-img img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+        .collection-card:hover .collection-img img { transform: scale(1.08); }
         .collection-badge {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: var(--gold);
-            color: var(--black);
-            padding: 6px 14px;
-            font-size: 0.75rem;
-            font-weight: 600;
-            border-radius: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            box-shadow: 0 0 10px var(--gold);
-            z-index: 2;
+            position: absolute; top: 20px; right: 20px; background: var(--gold); color: var(--black);
+            padding: 6px 14px; font-size: 0.75rem; font-weight: 600; border-radius: 20px; text-transform: uppercase;
+            letter-spacing: 1px; box-shadow: 0 0 10px var(--gold); z-index: 2;
         }
-
-/* Adjust collection-info for buttons only */
-.collection-info {
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100px;
-}
-
-/* Adjust collection-img to take more space */
-.collection-img {
-    height: 350px;
-}
-
-/* Adjust card height for new layout */
-.collection-card {
-    min-height: 450px;
-    display: flex;
-    flex-direction: column;
-}
-
-.collection-card .collection-img {
-    flex: 1;
-}
-
-.collection-card .collection-info {
-    flex-shrink: 0;
-}
-
+        .collection-info { padding: 20px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
         .whatsapp-btn {
-            display: block;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-            padding: 12px 25px;
-            background: #25D366;
-            color: var(--white);
-            border-radius: 0;
-            text-decoration: none;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-size: 0.8rem;
-            transition: var(--transition);
-            border: 2px solid #25D366;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            box-shadow: 0 0 15px rgba(37, 211, 102, 0.3);
-            margin-top: 15px;
-            text-align: center;
+            display: block; width: 100%; align-items: center; justify-content: center; padding: 12px 25px;
+            background: #25D366; color: var(--white); border-radius: 0; text-decoration: none; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.8rem; transition: var(--transition);
+            border: 2px solid #25D366; position: relative; overflow: hidden; z-index: 1;
+            box-shadow: 0 0 15px rgba(37, 211, 102, 0.3); margin-top: 15px; text-align: center;
         }
-
-        .whatsapp-btn i {
-            margin-right: 8px;
-        }
-
+        .whatsapp-btn i { margin-right: 8px; }
         .whatsapp-btn::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 0;
-            height: 100%;
-            background: var(--black);
-            transition: var(--transition);
-            z-index: -1;
+            content: ''; position: absolute; top: 0; left: 0; width: 0; height: 100%;
+            background: var(--black); transition: var(--transition); z-index: -1;
         }
-
-        .whatsapp-btn:hover::before {
-            width: 100%;
-        }
-
-        .whatsapp-btn:hover {
-            color: #25D366;
-            box-shadow: 0 0 25px rgba(37, 211, 102, 0.5);
-        }
+        .whatsapp-btn:hover::before { width: 100%; }
+        .whatsapp-btn:hover { color: #25D366; box-shadow: 0 0 25px rgba(37, 211, 102, 0.5); }
 
         /* TikTok Section */
-        .tiktok-section {
-            padding: 100px 0;
-            position: relative;
-            overflow: hidden;
-            background: var(--dark-gray);
-            z-index: 5;
-        }
-
-        .tiktok-section::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: url('https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=1920&q=80') no-repeat center/cover;
-            opacity: 0.05;
-            z-index: -1;
-        }
-
-        .videos-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-
+        .tiktok-section { padding: 100px 0; position: relative; overflow: hidden; background: var(--dark-gray); z-index: 5; }
+        .videos-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
         .video-card {
-            background: rgba(0, 0, 0, 0.4);
-            border-radius: 10px;
-            overflow: hidden;
-            transition: var(--transition);
-            position: relative;
-            box-shadow: var(--shadow);
-            transform: translateY(50px);
-            opacity: 0;
-            transition: transform 0.8s ease, opacity 0.8s ease;
-            z-index: 1;
-            border: 1px solid rgba(255, 215, 0, 0.2);
+            background: rgba(0, 0, 0, 0.4); border-radius: 10px; overflow: hidden; transition: var(--transition);
+            position: relative; box-shadow: var(--shadow); transform: translateY(50px); opacity: 0;
+            transition: transform 0.8s ease, opacity 0.8s ease; z-index: 1; border: 1px solid rgba(255, 215, 0, 0.2);
         }
-
-        .video-card.visible {
-            transform: translateY(0);
-            opacity: 1;
-        }
-
-        .video-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3);
-            border-color: var(--gold);
-        }
-
-        .video-header {
-            display: flex;
-            align-items: center;
-            padding: 15px;
-            background: rgba(0, 0, 0, 0.4);
-            position: relative;
-        }
-
+        .video-card.visible { transform: translateY(0); opacity: 1; }
+        .video-card:hover { transform: translateY(-10px); box-shadow: 0 15px 40px rgba(255, 215, 0, 0.3); border-color: var(--gold); }
+        .video-header { display: flex; align-items: center; padding: 15px; background: rgba(0, 0, 0, 0.4); position: relative; }
         .video-header::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 1px;
+            content: ''; position: absolute; bottom: 0; left: 0; width: 100%; height: 1px;
             background: linear-gradient(to right, transparent, var(--gold), transparent);
         }
-
         .tiktok-icon {
-            width: 40px;
-            height: 40px;
-            background: linear-gradient(45deg, #000000, #ff0050);
-            border-radius: 8px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            font-size: 1.5rem;
+            width: 40px; height: 40px; background: linear-gradient(45deg, #000000, #ff0050); border-radius: 8px;
+            display: flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 1.5rem;
             box-shadow: 0 0 10px rgba(255, 0, 80, 0.5);
         }
-
-        .video-info h3 {
-            font-size: 1.1rem;
-            margin-bottom: 5px;
-        }
-
-        .video-stats {
-            display: flex;
-            gap: 15px;
-            font-size: 0.8rem;
-            color: #aaa;
-        }
-
-        .video-stats span {
-            display: flex;
-            align-items: center;
-        }
-
-        .video-stats i {
-            color: var(--gold);
-            margin-right: 5px;
-        }
-
-        .video-thumbnail {
-            height: 250px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .video-thumbnail img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: var(--transition);
-        }
-
-        .video-card:hover .video-thumbnail img {
-            transform: scale(1.1);
-        }
-
+        .video-info h3 { font-size: 1.1rem; margin-bottom: 5px; }
+        .video-stats { display: flex; gap: 15px; font-size: 0.8rem; color: #aaa; }
+        .video-stats span { display: flex; align-items: center; }
+        .video-stats i { color: var(--gold); margin-right: 5px; }
+        .video-thumbnail { height: 250px; position: relative; overflow: hidden; }
+        .video-thumbnail img { width: 100%; height: 100%; object-fit: cover; transition: var(--transition); }
+        .video-card:hover .video-thumbnail img { transform: scale(1.1); }
         .play-icon {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            width: 60px;
-            height: 60px;
-            background: rgba(0, 0, 0, 0.6);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: var(--gold);
-            font-size: 1.5rem;
-            opacity: 0;
-            transition: var(--transition);
-            cursor: pointer;
-            box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+            position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60px; height: 60px;
+            background: rgba(0, 0, 0, 0.6); border-radius: 50%; display: flex; align-items: center;
+            justify-content: center; color: var(--gold); font-size: 1.5rem; opacity: 0; transition: var(--transition);
+            cursor: pointer; box-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
         }
-
-        .video-card:hover .play-icon {
-            opacity: 1;
-        }
-
-        .video-footer {
-            padding: 15px;
-            text-align: center;
-            background: rgba(0, 0, 0, 0.3);
-        }
-
-        .hashtag {
-            color: var(--gold);
-            font-weight: 600;
-            letter-spacing: 1px;
-            text-shadow: 0 0 5px rgba(255, 215, 0, 0.5);
-        }
+        .video-card:hover .play-icon { opacity: 1; }
+        .video-footer { padding: 15px; text-align: center; background: rgba(0, 0, 0, 0.3); }
+        .hashtag { color: var(--gold); font-weight: 600; letter-spacing: 1px; text-shadow: 0 0 5px rgba(255, 215, 0, 0.5); }
 
         /* Contact Section */
-        .contact {
-            padding: 100px 0;
-            background: var(--dark-gray);
-            position: relative;
-            overflow: hidden;
-            z-index: 5;
-        }
-
-        .contact-content {
-            display: flex;
-            gap: 50px;
-        }
-
-        .contact-info {
-            flex: 1;
-        }
-
-        .contact-info h2 {
-            font-size: 3.3rem;
-            margin-bottom: 20px;
-            position: relative;
-            display: inline-block;
-        }
-
+        .contact { padding: 100px 0; background: var(--dark-gray); position: relative; overflow: hidden; z-index: 5; }
+        .contact-content { display: flex; gap: 50px; }
+        .contact-info { flex: 1; }
+        .contact-info h2 { font-size: 3.3rem; margin-bottom: 20px; position: relative; display: inline-block; }
         .contact-info h2::after {
-            content: '';
-            position: absolute;
-            bottom: -15px;
-            left: 0;
-            width: 80px;
-            height: 4px;
-            background: var(--neon-red);
-            border-radius: 2px;
-            box-shadow: 0 0 10px var(--neon-red);
+            content: ''; position: absolute; bottom: -15px; left: 0; width: 80px; height: 4px;
+            background: var(--neon-red); border-radius: 2px; box-shadow: 0 0 10px var(--neon-red);
         }
-
-        .contact-details {
-            margin-top: 30px;
-        }
-
-        .contact-item {
-            display: flex;
-            align-items: center;
-            margin-bottom: 20px;
-        }
-
+        .contact-details { margin-top: 30px; }
+        .contact-item { display: flex; align-items: center; margin-bottom: 20px; }
         .contact-item i {
-            width: 50px;
-            height: 50px;
-            background: var(--neon-red);
-            color: var(--white);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin-right: 15px;
-            font-size: 1.2rem;
+            width: 50px; height: 50px; background: var(--neon-red); color: var(--white); border-radius: 50%;
+            display: flex; align-items: center; justify-content: center; margin-right: 15px; font-size: 1.2rem;
             box-shadow: 0 0 10px var(--neon-red);
         }
-
-        .contact-item div h3 {
-            font-size: 1.2rem;
-            margin-bottom: 5px;
+        .contact-item div h3 { font-size: 1.2rem; margin-bottom: 5px; }
+        .contact-item div p { opacity: 0.8; }
+        .contact-form { flex: 1; background: var(--medium-gray); padding: 40px; border-radius: 10px; box-shadow: var(--shadow); border: 1px solid var(--gold); }
+        .form-group { margin-bottom: 20px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 500; }
+        .form-group input, .form-group textarea {
+            width: 100%; padding: 12px 15px; background: var(--dark-gray); border: 1px solid var(--gold);
+            color: var(--white); border-radius: 5px; font-family: 'Montserrat', sans-serif; transition: var(--transition);
         }
-
-        .contact-item div p {
-            opacity: 0.8;
-        }
-
-        .contact-form {
-            flex: 1;
-            background: var(--medium-gray);
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--gold);
-        }
-
-        .form-group {
-            margin-bottom: 20px;
-        }
-
-        .form-group label {
-            display: block;
-            margin-bottom: 8px;
-            font-weight: 500;
-        }
-
-        .form-group input,
-        .form-group textarea {
-            width: 100%;
-            padding: 12px 15px;
-            background: var(--dark-gray);
-            border: 1px solid var(--gold);
-            color: var(--white);
-            border-radius: 5px;
-            font-family: 'Montserrat', sans-serif;
-            transition: var(--transition);
-        }
-
-        .form-group input:focus,
-        .form-group textarea:focus {
-            outline: none;
-            border-color: var(--neon-red);
-            box-shadow: 0 0 10px var(--neon-red);
-        }
-
-        .form-group textarea {
-            height: 150px;
-            resize: vertical;
-        }
-
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--neon-red); box-shadow: 0 0 10px var(--neon-red); }
+        .form-group textarea { height: 150px; resize: vertical; }
         .submit-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 15px 40px;
-            background: var(--neon-red);
-            color: var(--white);
-            border: none;
-            border-radius: 5px;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-size: 0.9rem;
-            cursor: pointer;
-            transition: var(--transition);
-            box-shadow: 0 0 15px rgba(255, 7, 58, 0.5);
+            display: inline-flex; align-items: center; justify-content: center; padding: 15px 40px;
+            background: var(--neon-red); color: var(--white); border: none; border-radius: 5px; font-weight: 600;
+            text-transform: uppercase; letter-spacing: 1.5px; font-size: 0.9rem; cursor: pointer;
+            transition: var(--transition); box-shadow: 0 0 15px rgba(255, 7, 58, 0.5);
         }
-
-        .submit-btn:hover {
-            background: var(--black);
-            color: var(--neon-red);
-            box-shadow: 0 0 20px var(--neon-red);
-        }
+        .submit-btn:hover { background: var(--black); color: var(--neon-red); box-shadow: 0 0 20px var(--neon-red); }
 
         /* Newsletter */
-        .newsletter {
-            padding: 100px 0;
-            background: var(--dark-gray);
-            text-align: center;
-            position: relative;
-            overflow: hidden;
-            z-index: 5;
-            border-top: 1px solid rgba(255, 215, 0, 0.3);
-            border-bottom: 1px solid rgba(255, 215, 0, 0.3);
-        }
-
+        .newsletter { padding: 100px 0; background: var(--dark-gray); text-align: center; position: relative; overflow: hidden; z-index: 5; border-top: 1px solid rgba(255, 215, 0, 0.3); border-bottom: 1px solid rgba(255, 215, 0, 0.3); }
         .newsletter::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(45deg, rgba(255, 215, 0, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%);
-            z-index: 0;
+            content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(45deg, rgba(255, 215, 0, 0.1) 0%, rgba(0, 0, 0, 0.8) 100%); z-index: 0;
         }
-
         .newsletter-content {
-            max-width: 600px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-            padding: 50px;
-            background: rgba(10, 10, 10, 0.7);
-            border: 1px solid var(--gold);
-            border-radius: 15px;
-            box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
+            max-width: 600px; margin: 0 auto; position: relative; z-index: 1; padding: 50px;
+            background: rgba(10, 10, 10, 0.7); border: 1px solid var(--gold); border-radius: 15px; box-shadow: 0 0 30px rgba(255, 215, 0, 0.3);
         }
-
-        .newsletter h2 {
-            font-size: 2.3rem;
-            margin-bottom: 20px;
-        }
-
-        .newsletter p {
-            margin-bottom: 30px;
-            opacity: 0.8;
-            font-family: 'Raleway', sans-serif;
-        }
-
-        .newsletter-form {
-            display: flex;
-            max-width: 500px;
-            margin: 0 auto;
-        }
-
+        .newsletter h2 { font-size: 2.3rem; margin-bottom: 20px; }
+        .newsletter p { margin-bottom: 30px; opacity: 0.8; font-family: 'Raleway', sans-serif; }
+        .newsletter-form { display: flex; max-width: 500px; margin: 0 auto; }
         .newsletter-form input {
-            flex: 1;
-            padding: 15px 20px;
-            background: rgba(255, 255, 255, 0.08);
-            border: 1px solid var(--gold);
-            color: var(--white);
-            font-size: 1rem;
-            outline: none;
-            font-family: 'Montserrat', sans-serif;
+            flex: 1; padding: 15px 20px; background: rgba(255, 255, 255, 0.08); border: 1px solid var(--gold);
+            color: var(--white); font-size: 1rem; outline: none; font-family: 'Montserrat', sans-serif;
         }
-
-        .newsletter-form input::placeholder {
-            color: #aaa;
-        }
-
+        .newsletter-form input::placeholder { color: #aaa; }
         .newsletter-form button {
-            padding: 15px 30px;
-            background: var(--gold);
-            color: var(--black);
-            border: none;
-            cursor: pointer;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            transition: var(--transition);
-            font-family: 'Montserrat', sans-serif;
+            padding: 15px 30px; background: var(--gold); color: var(--black); border: none; cursor: pointer;
+            font-weight: 600; text-transform: uppercase; letter-spacing: 1px; transition: var(--transition); font-family: 'Montserrat', sans-serif;
         }
-
-        .newsletter-form button:hover {
-            background: var(--dark-gold);
-            color: var(--white);
-        }
+        .newsletter-form button:hover { background: var(--dark-gold); color: var(--white); }
 
         /* Footer */
-        footer {
-            background: var(--black);
-            padding: 80px 0 40px;
-            position: relative;
-            overflow: hidden;
-            border-top: 1px solid var(--gold);
-            z-index: 5;
-        }
-
-        .footer-content {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-
-        .footer-column h3 {
-            font-size: 1.4rem;
-            margin-bottom: 25px;
-            position: relative;
-            padding-bottom: 10px;
-        }
-
-        .footer-column h3::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 50px;
-            height: 3px;
-            background: var(--gold);
-        }
-
-        .footer-links {
-            list-style: none;
-        }
-
-        .footer-links li {
-            margin-bottom: 15px;
-        }
-
-        .footer-links a {
-            color: #aaa;
-            text-decoration: none;
-            transition: var(--transition);
-            display: flex;
-            align-items: center;
-            font-size: 0.95rem;
-        }
-
-        .footer-links a i {
-            margin-right: 10px;
-            color: var(--gold);
-            width: 20px;
-            font-size: 0.9rem;
-        }
-
-        .footer-links a:hover {
-            color: var(--gold);
-            padding-left: 5px;
-        }
-
-        .footer-social {
-            display: flex;
-            gap: 15px;
-            margin-top: 20px;
-        }
-
+        footer { background: var(--black); padding: 80px 0 40px; position: relative; overflow: hidden; border-top: 1px solid var(--gold); z-index: 5; }
+        .footer-content { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; margin-bottom: 60px; }
+        .footer-column h3 { font-size: 1.4rem; margin-bottom: 25px; position: relative; padding-bottom: 10px; }
+        .footer-column h3::after { content: ''; position: absolute; bottom: 0; left: 0; width: 50px; height: 3px; background: var(--gold); }
+        .footer-links { list-style: none; }
+        .footer-links li { margin-bottom: 15px; }
+        .footer-links a { color: #aaa; text-decoration: none; transition: var(--transition); display: flex; align-items: center; font-size: 0.95rem; }
+        .footer-links a i { margin-right: 10px; color: var(--gold); width: 20px; font-size: 0.9rem; }
+        .footer-links a:hover { color: var(--gold); padding-left: 5px; }
+        .footer-social { display: flex; gap: 15px; margin-top: 20px; }
         .footer-social a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 45px;
-            height: 45px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.05);
-            color: var(--white);
-            font-size: 1.1rem;
-            transition: var(--transition);
+            display: flex; align-items: center; justify-content: center; width: 45px; height: 45px; border-radius: 50%;
+            background: rgba(255, 255, 255, 0.05); color: var(--white); font-size: 1.1rem; transition: var(--transition);
         }
-
-        .footer-social a:hover {
-            background: var(--gold);
-            color: var(--black);
-            transform: translateY(-5px);
-            box-shadow: 0 0 15px var(--gold);
-        }
-
-        .copyright {
-            text-align: center;
-            padding-top: 40px;
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            font-size: 0.9rem;
-            color: #777;
-        }
+        .footer-social a:hover { background: var(--gold); color: var(--black); transform: translateY(-5px); box-shadow: 0 0 15px var(--gold); }
+        .copyright { text-align: center; padding-top: 40px; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.9rem; color: #777; }
 
         /* Animations */
-        @keyframes float {
-            0% {
-                transform: translateY(0px);
-            }
-
-            50% {
-                transform: translateY(-20px);
-            }
-
-            100% {
-                transform: translateY(0px);
-            }
-        }
-
-        @keyframes pulse {
-            0% {
-                transform: scale(0.9);
-                opacity: 0.1;
-            }
-
-            50% {
-                transform: scale(1);
-                opacity: 0.2;
-            }
-
-            100% {
-                transform: scale(0.9);
-                opacity: 0.1;
-            }
-        }
+        @keyframes float { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-20px); } }
+        @keyframes pulse { 0%, 100% { transform: scale(0.9); opacity: 0.1; } 50% { transform: scale(1); opacity: 0.2; } }
 
         /* Mobile Menu */
         .mobile-menu {
-            position: fixed;
-            top: 0;
-            right: -100%;
-            width: 80%;
-            max-width: 320px;
-            height: 100%;
-            background: var(--dark-gray);
-            z-index: 1100;
-            transition: var(--transition);
-            padding: 80px 30px 30px;
-            box-shadow: -5px 0 30px rgba(255, 215, 0, 0.2);
-            border-left: 1px solid var(--gold);
+            position: fixed; top: 0; right: -100%; width: 80%; max-width: 320px; height: 100%;
+            background: var(--dark-gray); z-index: 1100; transition: var(--transition); padding: 80px 30px 30px;
+            box-shadow: -5px 0 30px rgba(255, 215, 0, 0.2); border-left: 1px solid var(--gold);
         }
-
-        .mobile-menu.active {
-            right: 0;
-        }
-
-        .mobile-menu ul {
-            list-style: none;
-        }
-
-        .mobile-menu li {
-            margin-bottom: 25px;
-        }
-
+        .mobile-menu.active { right: 0; }
+        .mobile-menu ul { list-style: none; }
+        .mobile-menu li { margin-bottom: 25px; }
         .mobile-menu a {
-            color: var(--white);
-            text-decoration: none;
-            font-size: 1.2rem;
-            font-weight: 500;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            position: relative;
-            padding: 5px 0;
-            display: block;
+            color: var(--white); text-decoration: none; font-size: 1.2rem; font-weight: 500; text-transform: uppercase;
+            letter-spacing: 1px; position: relative; padding: 5px 0; display: block;
         }
-
-        .mobile-menu a::after {
-            content: '';
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 0;
-            height: 2px;
-            background: var(--gold);
-            transition: var(--transition);
-        }
-
-        .mobile-menu a:hover::after {
-            width: 60px;
-        }
-
-        .close-menu {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            background: none;
-            border: none;
-            color: var(--white);
-            font-size: 1.8rem;
-            cursor: pointer;
-        }
-
+        .mobile-menu a::after { content: ''; position: absolute; bottom: 0; left: 0; width: 0; height: 2px; background: var(--gold); transition: var(--transition); }
+        .mobile-menu a:hover::after { width: 60px; }
+        .close-menu { position: absolute; top: 20px; right: 20px; background: none; border: none; color: var(--white); font-size: 1.8rem; cursor: pointer; }
         .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            z-index: 1000;
-            opacity: 0;
-            visibility: hidden;
-            transition: var(--transition);
+            position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8);
+            z-index: 1000; opacity: 0; visibility: hidden; transition: var(--transition);
         }
-
-        .overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
+        .overlay.active { opacity: 1; visibility: visible; }
 
         /* Responsive */
-        @media (max-width: 1200px) {
-            .hero-text h1 {
-                font-size: 4rem;
-            }
-
-            .about-content,
-            .contact-content {
-                gap: 40px;
-            }
-        }
-
         @media (max-width: 992px) {
-            .hero-content {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .hero-text {
-                padding-right: 0;
-                margin-bottom: 50px;
-                max-width: 100%;
-            }
-
-            .hero-text h1 {
-                font-size: 3.5rem;
-            }
-
-            .hero-image {
-                width: 100%;
-                height: 60vh;
-            }
-
-            nav ul {
-                display: none;
-            }
-
-            .social-icons {
-                display: none;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .collection-img {
-                height: 250px;
-            }
-
-            .about-content,
-            .contact-content {
-                flex-direction: column;
-            }
-
-            .about-image,
-            .contact-form {
-                margin-top: 40px;
-            }
-
-            .newsletter-content {
-                padding: 40px 30px;
-            }
+            .hero-content { flex-direction: column; text-align: center; }
+            .hero-text { padding-right: 0; margin-bottom: 50px; max-width: 100%; }
+            .hero-text h1 { font-size: 3.5rem; }
+            .hero-image { width: 100%; height: 60vh; }
+            nav ul, .social-icons { display: none; }
+            .mobile-menu-btn { display: block; }
+            .collection-img { height: 250px; }
+            .about-content, .contact-content { flex-direction: column; }
         }
-
         @media (max-width: 768px) {
-            .hero-text h1 {
-                font-size: 2.8rem;
-            }
-
-            .section-title {
-                font-size: 2.5rem;
-            }
-
-            .hero {
-                padding-top: 60px;
-                min-height: 80vh;
-            }
-
-            .videos-container {
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            }
-
-            .newsletter-form {
-                flex-direction: column;
-            }
-
-            .newsletter-form input,
-            .newsletter-form button {
-                width: 100%;
-            }
-
-            .newsletter-form button {
-                margin-top: 15px;
-            }
-
-            .about-text h2,
-            .contact-info h2 {
-                font-size: 2.5rem;
-            }
-
-            .about,
-            .collection,
-            .tiktok-section,
-            .contact,
-            .newsletter {
-                padding: 70px 0;
-            }
-
-            .collection-grid,
-            .videos-container {
-                gap: 20px;
-            }
-
-            .contact-form {
-                padding: 25px;
-            }
-
-            .footer-content {
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 30px;
-            }
+            .hero-text h1 { font-size: 2.8rem; }
+            .section-title { font-size: 2.5rem; }
+            .videos-container { grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
+            .newsletter-form { flex-direction: column; }
+            .newsletter-form input, .newsletter-form button { width: 100%; }
+            .newsletter-form button { margin-top: 15px; }
+            .about, .collection, .tiktok-section, .contact, .newsletter { padding: 70px 0; }
         }
-
         @media (max-width: 576px) {
-            .logo {
-                font-size: 2rem;
-            }
-
-            .hero-text h1 {
-                font-size: 2.5rem;
-            }
-
-            .section-title {
-                font-size: 2rem;
-            }
-
-            .collection-img {
-                height: 200px;
-            }
-
-            .hero-image {
-                height: 50vh;
-            }
-
-            .model-container {
-                animation: none;
-            }
-
-            .collection-card:hover,
-            .video-card:hover {
-                transform: none;
-            }
-
-            .mobile-menu {
-                width: 85%;
-            }
-
-            .about-text h2,
-            .contact-info h2 {
-                font-size: 2rem;
-            }
-
-            .section-header {
-                margin-bottom: 40px;
-            }
-
-            .footer-content {
-                grid-template-columns: 1fr;
-            }
-
-            .footer-column {
-                text-align: center;
-            }
-
-            .footer-column h3::after {
-                left: 50%;
-                transform: translateX(-50%);
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero-text h1 {
-                font-size: 2.2rem;
-            }
-
-            .btn {
-                padding: 15px 30px;
-            }
-
-            .videos-container {
-                grid-template-columns: 1fr;
-            }
-
-            .collection-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .hero-text p,
-            .section-subtitle {
-                font-size: 1rem;
-            }
-
-            .about-text p {
-                font-size: 1rem;
-            }
-
-            .newsletter-content {
-                padding: 30px 20px;
-            }
-
-            .newsletter h2 {
-                font-size: 1.8rem;
-            }
-
-            .contact-item {
-                flex-direction: column;
-                text-align: center;
-            }
-
-            .contact-item i {
-                margin-right: 0;
-                margin-bottom: 10px;
-            }
-        }
-
-        @media (max-width: 360px) {
-            .logo {
-                font-size: 1.8rem;
-            }
-
-            .hero-text h1 {
-                font-size: 2rem;
-            }
-
-            .btn {
-                padding: 12px 25px;
-                font-size: 0.8rem;
-            }
-
-            .section-title {
-                font-size: 1.8rem;
-            }
-
-            .about-text h2,
-            .contact-info h2 {
-                font-size: 1.8rem;
-            }
-
-            .collection-info {
-                padding: 15px;
-            }
-
-            .contact-form {
-                padding: 20px;
-            }
+            .logo { font-size: 2rem; }
+            .hero-text h1 { font-size: 2.5rem; }
+            .section-title { font-size: 2rem; }
+            .collection-img { height: 200px; }
+            .hero-image { height: 50vh; }
+            .footer-content { grid-template-columns: 1fr; }
+            .footer-column { text-align: center; }
+            .footer-column h3::after { left: 50%; transform: translateX(-50%); }
         }
     </style>
 </head>
@@ -1693,7 +475,7 @@
 <body>
     <!-- Header -->
     <header>
-        <a href="logo.jpeg" class="logo">THE KNOT CO👗</a>
+        <a href="#" class="logo">THE KNOT CO👗</a>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -1704,21 +486,17 @@
             </ul>
         </nav>
         <div class="social-icons">
-            <a href="https://wa.me/94776280714" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://web.facebook.com/clothcreationSl/?_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/the_knotco__/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@theknotcoclothing?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/94776280714" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://web.facebook.com/clothcreationSl/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/the_knotco__/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@theknotcoclothing" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
         </div>
-        <button class="mobile-menu-btn">
-            <i class="fas fa-bars"></i>
-        </button>
+        <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
     </header>
 
     <!-- Mobile Menu -->
     <div class="mobile-menu">
-        <button class="close-menu">
-            <i class="fas fa-times"></i>
-        </button>
+        <button class="close-menu"><i class="fas fa-times"></i></button>
         <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
@@ -1727,13 +505,12 @@
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="social-icons" style="margin-top: 30px; justify-content: center;">
-            <a href="https://wa.me/94776280714" target="_blank"><i class="fab fa-whatsapp"></i></a>
-            <a href="https://web.facebook.com/clothcreationSl/?_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/the_knotco__/" target="_blank"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.tiktok.com/@theknotcoclothing?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i></a>
+            <a href="https://wa.me/94776280714" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://web.facebook.com/clothcreationSl/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/the_knotco__/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.tiktok.com/@theknotcoclothing" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
         </div>
     </div>
-
     <div class="overlay"></div>
 
     <!-- Hero Section -->
@@ -1741,241 +518,339 @@
         <div class="container hero-content">
             <div class="hero-text">
                 <h1>REDEFINE YOUR <span>STREET STYLE</span></h1>
-                <p>Discover premium urban fashion that blends contemporary design with uncompromising quality. Stand out
-                    with our exclusive streetwear collection.</p>
+                <p>Discover premium urban fashion that blends contemporary design with uncompromising quality. Stand out with our exclusive streetwear collection.</p>
                 <a href="#collection" class="btn"><i class="fas fa-arrow-right"></i> Explore Collection</a>
             </div>
             <div class="hero-image">
                 <div class="model-container">
-                    <img src="main.jpg"
-                        alt="Fashion Model">
+                    <img src="main.jpg" alt="THE KNOT CO Premium Streetwear Fashion Model" width="600" height="800" fetchpriority="high">
                     <div class="model-overlay"></div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Collection Section -->
+    <section id="collection" class="collection">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Collection</h2>
+                <p class="section-subtitle">Click any product to order via WhatsApp instantly</p>
+            </div>
+            <div class="collection-grid">
+                <!-- Products 1 to 14 (Optimized with Lazy Loading & SEO Tags) -->
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/1.jpg" alt="THE KNOT CO Premium Urban Jacket" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%201" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/2.jpg" alt="THE KNOT CO Street Hoodie" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%202" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/3.jpg" alt="THE KNOT CO Denim Jeans" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%203" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/4.jpg" alt="THE KNOT CO Streetwear Tee" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%204" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/5.jpg" alt="THE KNOT CO Classic Blazer" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%205" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/6.jpg" alt="THE KNOT CO Cargo Pants" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%206" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/7.jpg" alt="THE KNOT CO Leather Jacket" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%207" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/8.jpg" alt="THE KNOT CO Knit Sweater" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%208" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/9.jpg" alt="THE KNOT CO Track Suit" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%209" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/10.jpg" alt="THE KNOT CO Premium Shirt" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2010" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/11.jpg" alt="THE KNOT CO Summer Shorts" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2011" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/12.jpg" alt="THE KNOT CO Urban Vest" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2012" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/13.jpg" alt="THE KNOT CO Polo Shirt" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2013" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/14.jpg" alt="THE KNOT CO Winter Coat" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2014" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
 
-<!-- Collection Section -->
-<section id="collection" class="collection">
-    <div class="container">
-        <div class="section-header">
-            <h2 class="section-title">Featured Collection</h2>
-            <p class="section-subtitle">Click any product to order via WhatsApp instantly</p>
+                <!-- NEW Products 15 to 34 (Added with Lazy Loading & SEO Tags) -->
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/15.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 15" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2015" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/16.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 16" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2016" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/17.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 17" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2017" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/18.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 18" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2018" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/19.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 19" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2019" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/20.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 20" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2020" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/21.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 21" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2021" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/22.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 22" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2022" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/23.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 23" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2023" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/24.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 24" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2024" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/25.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 25" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2025" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/26.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 26" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2026" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/27.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 27" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2027" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/28.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 28" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2028" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/29.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 29" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2029" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/30.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 30" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2030" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/31.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 31" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2031" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/32.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 32" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2032" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/33.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 33" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2033" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+                <div class="collection-card">
+                    <div class="collection-img">
+                        <img src="images/34.jpeg" alt="THE KNOT CO Premium Streetwear Collection Item 34" loading="lazy" decoding="async" width="400" height="350">
+                        <div class="collection-badge">New</div>
+                    </div>
+                    <div class="collection-info">
+                        <a href="https://wa.me/94776280714?text=Hi,%20I%20want%20to%20buy%20Product%2034" class="whatsapp-btn" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i> Buy Now</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="collection-grid">
-            <!-- Product 1 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/1.jpg"
-                        alt="Urban Jacket">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 2 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/2.jpg"
-                        alt="Street Hoodie">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 3 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/3.jpg"
-                        alt="Denim Jeans">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 4 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/4.jpg"
-                        alt="Streetwear Tee">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 5 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/5.jpg"
-                        alt="Classic Blazer">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 6 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/6.jpg"
-                        alt="Cargo Pants">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 7 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/7.jpg"
-                        alt="Leather Jacket">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 8 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/8.jpg"
-                        alt="Knit Sweater">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 9 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/9.jpg"
-                        alt="Track Suit">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 10 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/10.jpg"
-                        alt="Shirt">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 11 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/11.jpg"
-                        alt="Shorts">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 12 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/12.jpg"
-                        alt="Vest">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 13 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/13.jpg"
-                        alt="Polo Shirt">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-
-            <!-- Product 14 -->
-            <div class="collection-card">
-                <div class="collection-img">
-                    <img src="images/14.jpg"
-                        alt="Coat">
-                    <div class="collection-badge">New</div>
-                </div>
-                <div class="collection-info">
-                    <a href="https://wa.me/+94776280714?text=I want to buy this product"
-                        class="whatsapp-btn">
-                        <i class="fab fa-whatsapp"></i> Buy Now
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
     <!-- TikTok Section -->
     <section id="tiktok" class="tiktok-section">
@@ -1985,106 +860,24 @@
                 <p class="section-subtitle">Top viral videos from our community</p>
             </div>
             <div class="videos-container">
-                <!-- Video 1 -->
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theknotco1/video/7531994547568545032"
-                    data-video-id="7531994547568545032" style="max-width: 605px;min-width: 325px;">
-                    <section> <a target="_blank" title="@theknotco1"
-                            href="https://www.tiktok.com/@theknotco1?refer=embed">@theknotco1</a> 🥺💕<a title="capcut"
-                            target="_blank" href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a
-                            title="foeyoupage" target="_blank"
-                            href="https://www.tiktok.com/tag/foeyoupage?refer=embed">#foeyoupage</a> <a
-                            title="foeyoupageofficial" target="_blank"
-                            href="https://www.tiktok.com/tag/foeyoupageofficial?refer=embed">#foeyoupageofficial</a> <a
-                            title="viral" target="_blank" href="https://www.tiktok.com/tag/viral?refer=embed">#viral</a>
-                        <a title="trending" target="_blank"
-                            href="https://www.tiktok.com/tag/trending?refer=embed">#trending</a> <a title="capcut"
-                            target="_blank" href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a
-                            target="_blank" title="♬ original sound  - Melodius Official"
-                            href="https://www.tiktok.com/music/original-sound-Melodius-Official-7527019119653325569?refer=embed">♬
-                            original sound - Melodius Official</a>
-                    </section>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theknotco1/video/7531994547568545032" data-video-id="7531994547568545032" style="max-width: 605px;min-width: 325px;">
+                    <section> <a target="_blank" title="@theknotco1" href="https://www.tiktok.com/@theknotco1?refer=embed">@theknotco1</a> 🥺💕<a title="capcut" target="_blank" href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a title="foeyoupage" target="_blank" href="https://www.tiktok.com/tag/foeyoupage?refer=embed">#foeyoupage</a> <a title="viral" target="_blank" href="https://www.tiktok.com/tag/viral?refer=embed">#viral</a> <a title="trending" target="_blank" href="https://www.tiktok.com/tag/trending?refer=embed">#trending</a> </section>
                 </blockquote>
-                <script async src="https://www.tiktok.com/embed.js"></script>
-
-                <!-- Video 2 -->
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theknotco1/video/7515047317901282567"
-                    data-video-id="7515047317901282567" style="max-width: 605px;min-width: 325px;">
-                    <section> <a target="_blank" title="@theknotco1"
-                            href="https://www.tiktok.com/@theknotco1?refer=embed">@theknotco1</a> New Fullkit 🖤🥀 <a
-                            title="onemillionaudition" target="_blank"
-                            href="https://www.tiktok.com/tag/onemillionaudition?refer=embed">#onemillionaudition</a> <a
-                            title="newtrend" target="_blank"
-                            href="https://www.tiktok.com/tag/newtrend?refer=embed">#newtrend</a> <a title="foryou"
-                            target="_blank" href="https://www.tiktok.com/tag/foryou?refer=embed">#foryou</a> #<a
-                            title="foryoupage❤️❤️" target="_blank"
-                            href="https://www.tiktok.com/tag/foryoupage%E2%9D%A4%EF%B8%8F%E2%9D%A4%EF%B8%8F?refer=embed">#foryoupage❤️❤️</a>
-                        #<a title="fyppppppppppppppppppppppp" target="_blank"
-                            href="https://www.tiktok.com/tag/fyppppppppppppppppppppppp?refer=embed">#fyppppppppppppppppppppppp</a>
-                        <a title="fyp" target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a
-                            title="capcut" target="_blank"
-                            href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a target="_blank"
-                            title="♬ original sound - 𝑴𝒐𝒐𝑵𝒍𝒊𝒈𝑯𝒕_𝒎𝒖𝑺𝒊𝒄☾"
-                            href="https://www.tiktok.com/music/original-sound-7499271567294221057?refer=embed">♬
-                            original sound - 𝑴𝒐𝒐𝑵𝒍𝒊𝒈𝑯𝒕_𝒎𝒖𝑺𝒊𝒄☾</a>
-                    </section>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theknotco1/video/7515047317901282567" data-video-id="7515047317901282567" style="max-width: 605px;min-width: 325px;">
+                    <section> <a target="_blank" title="@theknotco1" href="https://www.tiktok.com/@theknotco1?refer=embed">@theknotco1</a> New Fullkit 🖤🥀 <a title="newtrend" target="_blank" href="https://www.tiktok.com/tag/newtrend?refer=embed">#newtrend</a> <a title="foryou" target="_blank" href="https://www.tiktok.com/tag/foryou?refer=embed">#foryou</a> </section>
                 </blockquote>
-                <script async src="https://www.tiktok.com/embed.js"></script>
-
-                <!-- Video 3 -->
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theknotco1/video/7515784098485390610"
-                    data-video-id="7515784098485390610" style="max-width: 605px;min-width: 325px;">
-                    <section> <a target="_blank" title="@theknotco1"
-                            href="https://www.tiktok.com/@theknotco1?refer=embed">@theknotco1</a> මේ Frock එක Pink
-                        Colour එකෙන් ගන්න බැරි වුන අයට මේ colour එකෙන් ගන්න පුළුවන් 🥰🥀❤️ <a title="onemillionaudition"
-                            target="_blank"
-                            href="https://www.tiktok.com/tag/onemillionaudition?refer=embed">#onemillionaudition</a> <a
-                            title="foryou" target="_blank"
-                            href="https://www.tiktok.com/tag/foryou?refer=embed">#foryou</a> <a title="fyp"
-                            target="_blank" href="https://www.tiktok.com/tag/fyp?refer=embed">#fyp</a> <a
-                            title="foryoupage❤️❤️" target="_blank"
-                            href="https://www.tiktok.com/tag/foryoupage%E2%9D%A4%EF%B8%8F%E2%9D%A4%EF%B8%8F?refer=embed">#foryoupage❤️❤️</a>
-                        <a title="creatorsearchinsights" target="_blank"
-                            href="https://www.tiktok.com/tag/creatorsearchinsights?refer=embed">#creatorsearchinsights</a>
-                        <a title="viral" target="_blank" href="https://www.tiktok.com/tag/viral?refer=embed">#viral</a>
-                        <a title="capcut" target="_blank"
-                            href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a target="_blank"
-                            title="♬ original sound - Teev Dance School"
-                            href="https://www.tiktok.com/music/original-sound-7514324006351244033?refer=embed">♬
-                            original sound - Teev Dance School</a>
-                    </section>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theknotco1/video/7515784098485390610" data-video-id="7515784098485390610" style="max-width: 605px;min-width: 325px;">
+                    <section> <a target="_blank" title="@theknotco1" href="https://www.tiktok.com/@theknotco1?refer=embed">@theknotco1</a> මේ Frock එක Pink Colour එකෙන් ගන්න බැරි වුන අයට මේ colour එකෙන් ගන්න පුළුවන් 🥰🥀❤️ <a title="foryou" target="_blank" href="https://www.tiktok.com/tag/foryou?refer=embed">#foryou</a> <a title="viral" target="_blank" href="https://www.tiktok.com/tag/viral?refer=embed">#viral</a> </section>
                 </blockquote>
-                <script async src="https://www.tiktok.com/embed.js"></script>
-
-                <!-- Video 4 -->
-                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theknotco1/video/7535084905424784658"
-                    data-video-id="7535084905424784658" style="max-width: 605px;min-width: 325px;">
-                    <section> <a target="_blank" title="@theknotco1"
-                            href="https://www.tiktok.com/@theknotco1?refer=embed">@theknotco1</a> White 🤍# ඕනි අයට
-                        Order කරන්න පුළුවන් <a title="💕" target="_blank"
-                            href="https://www.tiktok.com/tag/%F0%9F%92%95?refer=embed">#💕</a><a title="trending"
-                            target="_blank" href="https://www.tiktok.com/tag/trending?refer=embed">#trending</a> <a
-                            title="viraltiktok" target="_blank"
-                            href="https://www.tiktok.com/tag/viraltiktok?refer=embed">#viraltiktok</a> <a
-                            title="creatorsearchinsights" target="_blank"
-                            href="https://www.tiktok.com/tag/creatorsearchinsights?refer=embed">#creatorsearchinsights</a>
-                        <a title="followers" target="_blank"
-                            href="https://www.tiktok.com/tag/followers?refer=embed">#followers</a> <a title="theknotco"
-                            target="_blank" href="https://www.tiktok.com/tag/theknotco?refer=embed">#TheKnotCo</a> <a
-                            title="capcut" target="_blank"
-                            href="https://www.tiktok.com/tag/capcut?refer=embed">#CapCut</a> <a target="_blank"
-                            title="♬ original sound - 🍒Hashie⛓"
-                            href="https://www.tiktok.com/music/original-sound-7532164715209755408?refer=embed">♬
-                            original sound - 🍒Hashie⛓</a>
-                    </section>
+                <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@theknotco1/video/7535084905424784658" data-video-id="7535084905424784658" style="max-width: 605px;min-width: 325px;">
+                    <section> <a target="_blank" title="@theknotco1" href="https://www.tiktok.com/@theknotco1?refer=embed">@theknotco1</a> White 🤍# ඕනි අයට Order කරන්න පුළුවන් 💕<a title="trending" target="_blank" href="https://www.tiktok.com/tag/trending?refer=embed">#trending</a> <a title="theknotco" target="_blank" href="https://www.tiktok.com/tag/theknotco?refer=embed">#TheKnotCo</a> </section>
                 </blockquote>
-                <script async src="https://www.tiktok.com/embed.js"></script>
             </div>
-        </div>
-        <div style="text-align: center; margin-top: 40px;">
-            <a href="https://www.tiktok.com/@theknotcoclothing?is_from_webapp=1&sender_device=pc" target="_blank" class="btn" style="display: inline-flex;">
-                <i class="fab fa-tiktok"></i> Follow us on TikTok
-            </a>
-        </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="https://www.tiktok.com/@theknotcoclothing" target="_blank" class="btn" style="display: inline-flex;" rel="noopener noreferrer">
+                    <i class="fab fa-tiktok"></i> Follow us on TikTok
+                </a>
+            </div>
         </div>
     </section>
 
@@ -2094,20 +887,12 @@
             <div class="about-content">
                 <div class="about-text">
                     <h2>About Us</h2>
-                    <p>Welcome to THE KNOT CO👗, where fashion meets individuality. We believe that clothing is more
-                        than just fabric - it's a form of self-expression, a statement of identity, and a celebration of
-                        personal style.</p>
-                    <p>Founded in 2020, our brand was born from a passion for creating unique, high-quality streetwear
-                        that empowers our customers to express their authentic selves. Every piece in our collection is
-                        thoughtfully designed to blend comfort, style, and durability.</p>
-                    <p>Our mission is to redefine urban fashion by combining contemporary trends with timeless elegance.
-                        We're committed to sustainable practices and ethical manufacturing, ensuring that our fashion
-                        choices have a positive impact on both people and the planet.</p>
-                    <p>Join our community of fashion-forward individuals and discover clothing that not only looks good
-                        but feels right.</p>
+                    <p>Welcome to THE KNOT CO👗, where fashion meets individuality. We believe that clothing is more than just fabric - it's a form of self-expression, a statement of identity, and a celebration of personal style.</p>
+                    <p>Founded in 2020, our brand was born from a passion for creating unique, high-quality streetwear that empowers our customers to express their authentic selves. Every piece in our collection is thoughtfully designed to blend comfort, style, and durability.</p>
+                    <p>Our mission is to redefine urban fashion by combining contemporary trends with timeless elegance. We're committed to sustainable practices and ethical manufacturing, ensuring that our fashion choices have a positive impact on both people and the planet.</p>
                 </div>
                 <div class="about-image">
-                    <img src="logo.jpeg" alt="About Us">
+                    <img src="logo.jpeg" alt="THE KNOT CO Brand Logo and Store" loading="lazy" decoding="async" width="500" height="500">
                 </div>
             </div>
         </div>
@@ -2119,41 +904,26 @@
             <div class="contact-content">
                 <div class="contact-info">
                     <h2>Contact Us</h2>
-                    <p>Have questions or need assistance? We're here to help! Reach out to us through any of the
-                        following methods:</p>
-
+                    <p>Have questions or need assistance? We're here to help! Reach out to us through any of the following methods:</p>
                     <div class="contact-details">
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <h3>Our Location</h3>
-                                <p>The Knot Co, Mellawagedara Road, Pannala</p>
-                            </div>
+                            <div><h3>Our Location</h3><p>The Knot Co, Mellawagedara Road, Pannala</p></div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-phone"></i>
-                            <div>
-                                <h3>Phone Number</h3>
-                                <p>+94 77 628 0714</p>
-                            </div>
+                            <div><h3>Phone Number</h3><p>+94 77 628 0714</p></div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-envelope"></i>
-                            <div>
-                                <h3>Email Address</h3>
-                                <p>info@theknotco.com</p>
-                            </div>
+                            <div><h3>Email Address</h3><p>info@theknotco.com</p></div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-clock"></i>
-                            <div>
-                                <h3>Working Hours</h3>
-                                <p>Monday - Saturday: 9:00 AM - 8:00 PM</p>
-                            </div>
+                            <div><h3>Working Hours</h3><p>Monday - Saturday: 9:00 AM - 8:00 PM</p></div>
                         </div>
                     </div>
                 </div>
-
                 <div class="contact-form">
                     <h3>Send us a Message</h3>
                     <form id="contactForm">
@@ -2202,43 +972,39 @@
                     <h3>THE KNOT CO👗</h3>
                     <p>Redefining urban fashion with sustainable, stylish clothing for the modern individual.</p>
                     <div class="footer-social">
-                        <a href="https://wa.me/94776280714" target="_blank"><i class="fab fa-whatsapp"></i></a>
-                        <a href="https://web.facebook.com/clothcreationSl/?_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.instagram.com/the_knotco__/" target="_blank"><i class="fab fa-instagram"></i></a>
-                        <a href="https://www.tiktok.com/@theknotcoclothing?is_from_webapp=1&sender_device=pc" target="_blank"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/94776280714" target="_blank" rel="noopener noreferrer"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://web.facebook.com/clothcreationSl/" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/the_knotco__/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@theknotcoclothing" target="_blank" rel="noopener noreferrer"><i class="fab fa-tiktok"></i></a>
                     </div>
                 </div>
                 <div class="footer-column">
                     <h3>Shop</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-tshirt"></i> New Arrivals</a></li>
-                        <li><a href="#"><i class="fas fa-fire"></i> Bestsellers</a></li>
-                        <li><a href="#"><i class="fas fa-percent"></i> Sale</a></li>
-                        <li><a href="#"><i class="fas fa-box"></i> Collections</a></li>
+                        <li><a href="#collection"><i class="fas fa-tshirt"></i> New Arrivals</a></li>
+                        <li><a href="#collection"><i class="fas fa-fire"></i> Bestsellers</a></li>
+                        <li><a href="#collection"><i class="fas fa-percent"></i> Sale</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Help</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-shipping-fast"></i> Shipping</a></li>
-                        <li><a href="#"><i class="fas fa-exchange-alt"></i> Returns</a></li>
-                        <li><a href="#"><i class="fas fa-question-circle"></i> FAQ</a></li>
-                        <li><a href="#"><i class="fas fa-ruler"></i> Size Guide</a></li>
+                        <li><a href="#contact"><i class="fas fa-shipping-fast"></i> Shipping</a></li>
+                        <li><a href="#contact"><i class="fas fa-exchange-alt"></i> Returns</a></li>
+                        <li><a href="#contact"><i class="fas fa-question-circle"></i> FAQ</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h3>Contact</h3>
                     <ul class="footer-links">
-                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> The Knot Co, Mellawagedara Road, Pannala</a></li>
-                        <li><a href="tel:+11234567890"><i class="fas fa-phone"></i> +94 77 628 0714</a></li>
-                        <li><a href="mailto:info@theknotco.com"><i class="fas fa-envelope"></i> info@theknotco.com</a>
-                        </li>
-                        <li><a href="#"><i class="fas fa-clock"></i> Mon-Sat: 9AM-8PM</a></li>
+                        <li><a href="#contact"><i class="fas fa-map-marker-alt"></i> Mellawagedara Road, Pannala</a></li>
+                        <li><a href="tel:+94776280714"><i class="fas fa-phone"></i> +94 77 628 0714</a></li>
+                        <li><a href="mailto:info@theknotco.com"><i class="fas fa-envelope"></i> info@theknotco.com</a></li>
                     </ul>
                 </div>
             </div>
             <div class="copyright">
-                &copy; 2023 THE KNOT CO👗. All rights reserved. Designed with B&B.
+                &copy; 2024 THE KNOT CO👗. All rights reserved.
             </div>
         </div>
     </footer>
@@ -2282,147 +1048,48 @@
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 if (this.getAttribute('href') === '#') return;
-
                 e.preventDefault();
-
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
-
-                // Close mobile menu if open
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
                 mobileMenu.classList.remove('active');
                 overlay.classList.remove('active');
                 document.body.style.overflow = '';
             });
         });
 
-        // Scroll animations
-        function animateOnScroll() {
-            const videoCards = document.querySelectorAll('.video-card');
-            const collectionCards = document.querySelectorAll('.collection-card');
-            const triggerBottom = window.innerHeight * 0.8;
-
-            videoCards.forEach(card => {
-                const cardTop = card.getBoundingClientRect().top;
-                if (cardTop < triggerBottom) {
-                    card.classList.add('visible');
+        // Scroll animations (Optimized with Intersection Observer for better performance with many images)
+        const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target); // Stop observing once visible for performance
                 }
             });
+        }, observerOptions);
 
-            collectionCards.forEach(card => {
-                const cardTop = card.getBoundingClientRect().top;
-                if (cardTop < triggerBottom) {
-                    card.classList.add('visible');
-                }
-            });
-        }
-
-        // Initialize animations
-        window.addEventListener('scroll', animateOnScroll);
-        window.addEventListener('load', animateOnScroll);
-
-        // Video play simulation
-        document.querySelectorAll('.play-icon').forEach(icon => {
-            icon.addEventListener('click', function (e) {
-                e.preventDefault();
-                const videoCard = this.closest('.video-card');
-
-                // Create lightbox effect
-                const lightbox = document.createElement('div');
-                lightbox.style.position = 'fixed';
-                lightbox.style.top = '0';
-                lightbox.style.left = '0';
-                lightbox.style.width = '100%';
-                lightbox.style.height = '100%';
-                lightbox.style.backgroundColor = 'rgba(0,0,0,0.9)';
-                lightbox.style.zIndex = '2000';
-                lightbox.style.display = 'flex';
-                lightbox.style.justifyContent = 'center';
-                lightbox.style.alignItems = 'center';
-                lightbox.style.cursor = 'pointer';
-
-                // Create video container
-                const videoContainer = document.createElement('div');
-                videoContainer.style.position = 'relative';
-                videoContainer.style.width = '80%';
-                videoContainer.style.maxWidth = '800px';
-                videoContainer.style.height = '80%';
-                videoContainer.style.backgroundColor = '#000';
-                videoContainer.style.border = '2px solid var(--gold)';
-                videoContainer.style.boxShadow = '0 0 30px var(--gold)';
-
-                // Add close button
-                const closeBtn = document.createElement('button');
-                closeBtn.innerHTML = '&times;';
-                closeBtn.style.position = 'absolute';
-                closeBtn.style.top = '15px';
-                closeBtn.style.right = '15px';
-                closeBtn.style.background = 'transparent';
-                closeBtn.style.border = 'none';
-                closeBtn.style.color = '#fff';
-                closeBtn.style.fontSize = '2rem';
-                closeBtn.style.cursor = 'pointer';
-                closeBtn.style.zIndex = '10';
-
-                // Add video
-                const video = document.createElement('video');
-                video.src = 'https://assets.mixkit.co/videos/preview/mixkit-winter-fashion-cold-looking-woman-concept-video-39874-large.mp4';
-                video.style.width = '100%';
-                video.style.height = '100%';
-                video.controls = true;
-                video.autoplay = true;
-
-                // Build structure
-                videoContainer.appendChild(closeBtn);
-                videoContainer.appendChild(video);
-                lightbox.appendChild(videoContainer);
-                document.body.appendChild(lightbox);
-
-                // Close functionality
-                closeBtn.addEventListener('click', function () {
-                    document.body.removeChild(lightbox);
-                });
-
-                lightbox.addEventListener('click', function (e) {
-                    if (e.target === lightbox) {
-                        document.body.removeChild(lightbox);
-                    }
-                });
-            });
+        document.querySelectorAll('.video-card, .collection-card').forEach(card => {
+            observer.observe(card);
         });
 
-        // Newsletter form submission
-        const newsletterForm = document.querySelector('.newsletter-form');
-        newsletterForm.addEventListener('submit', function (e) {
+        // Form submissions
+        document.querySelector('.newsletter-form')?.addEventListener('submit', function (e) {
             e.preventDefault();
-            const emailInput = this.querySelector('input[type="email"]');
-
-            if (emailInput.value) {
-                alert('Thank you for subscribing to our newsletter!');
-                emailInput.value = '';
-            }
+            alert('Thank you for subscribing to our newsletter!');
+            this.reset();
         });
 
-        // Contact form submission
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', function (e) {
+        document.getElementById('contactForm')?.addEventListener('submit', function (e) {
             e.preventDefault();
             alert('Thank you for your message! We will get back to you soon.');
-            contactForm.reset();
+            this.reset();
         });
     </script>
 </body>
-
 </html>
-
-
-
-
-
-
-
-
